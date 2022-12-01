@@ -16,6 +16,8 @@
 		<!-- Site Title -->
 		<title>Travel</title>
 
+		<link rel="stylesheet" href="Travel/css/style.css">
+
 		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
 			<!--
 			CSS
@@ -42,8 +44,8 @@
 							<li><a href="index.php">Beranda</a></li>
 							<li><a href="wisata.php">Wisata</a></li>
 							<li><a href="about.php">Tentang</a></li>
-							<li><a href="packages.php">Kontak Kami</a></li>
-							<li><a href="hotels.php">Masuk</a></li>
+							<li><a href="contact.php">Kontak Kami</a></li>
+							<li><a href="masuk.php">Masuk</a></li>
 				        </ul>
 				      </nav><!-- #nav-menu-container -->					      		  
 					</div>
