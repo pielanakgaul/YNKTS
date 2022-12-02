@@ -14,7 +14,7 @@
 		<!-- meta character set -->
 		<meta charset="UTF-8">
 		<!-- Site Title -->
-		<title>Beranda</title>
+		<title>Masuk</title>
 
 		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
 			<!--
@@ -67,21 +67,26 @@
 				<div class="overlay overlay-bg"></div>				
 				<div class="container">
 					<div class="row fullscreen align-items-center justify-content-center">
-					<form style="z-index: 1; " class="text-white">
-						<div class="mb-3">
-							<label for="email" class="form-label">Email address</label>
-							<input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+						<div class="col-lg-4 col-md-4 banner-left ">
+							<form style="z-index: 1; " class="text-white">
+								<div class="mb-3">
+									<label for="email" class="form-label">Email address/Username</label>
+									<input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Masukan email atau username">
+								</div>
+								<div class="mb-3">
+									<label for="password" class="form-label">Password</label>
+									<input type="password" class="form-control" id="password" placeholder="Masukan password">
+								</div>
+								<div class="mb-3 form-check">
+									<input type="checkbox" class="form-check-input" id="exampleCheck1">
+									<label class="form-check-label" for="exampleCheck1">Check me out</label>
+								</div>
+								<button type="submit" class="btn btn-warning mt-3">Masuk</button>
+								<div class="mb-3 mt-3">
+									<a style="color: #0dcaf0; font-weight: bold;" href="registrasi.php">Belum punya akun? Daftar</a>
+								</div>
+							</form>  
 						</div>
-						<div class="mb-3">
-							<label for="password" class="form-label">Password</label>
-							<input type="password" class="form-control" id="password">
-						</div>
-						<div class="mb-3 form-check">
-							<input type="checkbox" class="form-check-input" id="exampleCheck1">
-							<label class="form-check-label" for="exampleCheck1">Check me out</label>
-						</div>
-						<button type="submit" class="btn btn-warning">Submit</button>
-					</form>  
 					</div>
 				</div>					
 			</section>
@@ -91,7 +96,7 @@
 			<footer class="footer-area section-gap">
 				<div class="container">
 					<div class="row">
-						<div class="col-lg-3  col-md-6 col-sm-6">
+						<div class="col-lg-4  col-md-6 col-sm-6">
 							<div class="single-footer-widget">
 								<h6>About Agency</h6>
 								<p>
@@ -99,30 +104,26 @@
 								</p>
 							</div>
 						</div>
-						<div class="col-lg-3 col-md-6 col-sm-6">
+						<div class="col-lg-4 col-md-6 col-sm-6">
 							<div class="single-footer-widget">
 								<h6>Navigation Links</h6>
 								<div class="row">
 									<div class="col">
 										<ul>
-											<li><a href="#">Home</a></li>
-											<li><a href="#">Feature</a></li>
-											<li><a href="#">Services</a></li>
-											<li><a href="#">Portfolio</a></li>
+											<li><a href="index.php">Beranda</a></li>
+											<li><a href="wisata.php">Wisata</a></li>
 										</ul>
 									</div>
 									<div class="col">
 										<ul>
-											<li><a href="#">Team</a></li>
-											<li><a href="#">Pricing</a></li>
-											<li><a href="#">Blog</a></li>
-											<li><a href="#">Contact</a></li>
+											<li><a href="about.php">Tentang</a></li>
+											<li><a href="contact.php">Kontak Kami</a></li>
 										</ul>
-									</div>										
+									</div>								
 								</div>							
 							</div>
 						</div>							
-						<div class="col-lg-3  col-md-6 col-sm-6">
+						<!-- <div class="col-lg-4  col-md-6 col-sm-6">
 							<div class="single-footer-widget">
 								<h6>Newsletter</h6>
 								<p>
@@ -138,8 +139,8 @@
 									</form>
 								</div>
 							</div>
-						</div>
-						<div class="col-lg-3  col-md-6 col-sm-6">
+						</div> -->
+						<div class="col-lg-4  col-md-6 col-sm-6">
 							<div class="single-footer-widget mail-chimp">
 								<h6 class="mb-20">InstaFeed</h6>
 								<ul class="instafeed d-flex flex-wrap">
@@ -158,7 +159,7 @@
 
 					<div class="row footer-bottom d-flex justify-content-between align-items-center">
 						<p class="col-lg-8 col-sm-12 footer-text m-0"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with by <a href="https://colorlib.com" target="_blank">Anoaland</a>
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | made by <a href="https://colorlib.com" target="_blank">Anoaland</a>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
 						<div class="col-lg-4 col-sm-12 footer-social">
 							<a href="#"><i class="fa fa-facebook"></i></a>

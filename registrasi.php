@@ -1,4 +1,4 @@
-	<!DOCTYPE html>
+<!DOCTYPE html>
 	<html lang="zxx" class="no-js">
 	<head>
 		<!-- Mobile Specific Meta -->
@@ -14,7 +14,7 @@
 		<!-- meta character set -->
 		<meta charset="UTF-8">
 		<!-- Site Title -->
-		<title>Travel</title>
+		<title>Masuk</title>
 
 		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
 			<!--
@@ -32,107 +32,75 @@
 		</head>
 		<body>	
 			<header id="header">
+				<!-- <div class="header-top">
+					<div class="container">
+			  		<div class="row align-items-center">
+			  			<div class="col-lg-6 col-sm-6 col-6 header-top-left">
+			  				<ul>
+			  					<li><a href="#">Visit Us</a></li>
+			  					<li><a href="#">Buy Tickets</a></li>
+			  				</ul>			
+			  			</div>
+			  			<div class="col-lg-6 col-sm-6 col-6 header-top-right">
+							<div class="header-social">
+								<a href="#"><i class="fa fa-facebook"></i></a>
+								<a href="#"><i class="fa fa-twitter"></i></a>
+								<a href="#"><i class="fa fa-dribbble"></i></a>
+								<a href="#"><i class="fa fa-behance"></i></a>
+							</div>
+			  			</div>
+			  		</div>			  					
+					</div>
+				</div> -->
 				<div class="container main-menu">
 					<div class="row align-items-center justify-content-between d-flex">
 				      <div id="logo">
 				        <a href="index.php"><img src="img/logo.png" alt="" title="" /></a>
 				      </div>
-				      <nav id="nav-menu-container">
-				        <ul class="nav-menu">
-							<li><a href="index.php">Beranda</a></li>
-							<li><a href="wisata.php">Wisata</a></li>
-							<li><a href="about.php">Tentang</a></li>
-							<li><a href="contact.php">Kontak Kami</a></li>
-							<li><a href="masuk.php">Masuk</a></li>
-				        </ul>
-				      </nav><!-- #nav-menu-container -->					      		  
 					</div>
 				</div>
+
 			</header><!-- #header -->
-	  
+			
 			<!-- start banner Area -->
-			<section class="relative about-banner">	
-				<div class="overlay overlay-bg"></div>
-				<div class="container">				
-					<div class="row d-flex align-items-center justify-content-center">
-						<div class="about-content col-lg-12">
-							<h1 class="text-white">
-								Kontak Kami				
-							</h1>	
-							<p class="text-white link-nav"><a href="index.php">Beranda </a>  <span class="lnr lnr-arrow-right"></span>  <a href="contact.php"> Kontak Kami</a></p>
-						</div>	
-					</div>
-				</div>
-			</section>
-			<!-- End banner Area -->				  
-
-			<!-- Start contact-page Area -->
-			<section class="contact-page-area section-gap">
+			<section class="banner-area relative">
+				<div class="overlay overlay-bg"></div>				
 				<div class="container">
-					<div class="row">
-						<div class="map-wrap" style="width:100%; height: 445px;" id="map"></div>
-						<div class="col-lg-4 d-flex flex-column address-wrap">
-							<div class="single-contact-address d-flex flex-row">
-								<div class="icon">
-									<span class="lnr lnr-home"></span>
+					<div class="row fullscreen align-items-center justify-content-center">
+                        <div class="col-lg-4 col-md-4 banner-left ">
+                            <form style="z-index: 1; " class="text-white">
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email address</label>
+                                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Masukan email">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="username" class="form-label">Username</label>
+                                    <input type="text" class="form-control" id="username"placeholder="Masukan username">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="password" class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="password" placeholder="Masukan passsword">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="konfirmasi-password" class="form-label">Konfirmasi Password</label>
+                                    <input type="password" class="form-control" id="konfirmasi-password" placeholder="Konfirmasi passsword">
+                                </div>
+                                <button type="submit" class="btn btn-warning mt-3">Register</button>
+                                <div class="mb-3 mt-3">
+									<a style="color: #0dcaf0; font-weight: bold;" href="masuk.php">Sudah punya akun? Masuk</a>
 								</div>
-								<div class="contact-details">
-									<h5>Binghamton, New York</h5>
-									<p>
-										4343 Hinkle Deegan Lake Road
-									</p>
-								</div>
-							</div>
-							<div class="single-contact-address d-flex flex-row">
-								<div class="icon">
-									<span class="lnr lnr-phone-handset"></span>
-								</div>
-								<div class="contact-details">
-									<h5>00 (958) 9865 562</h5>
-									<p>Mon to Fri 9am to 6 pm</p>
-								</div>
-							</div>
-							<div class="single-contact-address d-flex flex-row">
-								<div class="icon">
-									<span class="lnr lnr-envelope"></span>
-								</div>
-								<div class="contact-details">
-									<h5>support@colorlib.com</h5>
-									<p>Send us your query anytime!</p>
-								</div>
-							</div>														
-						</div>
-						<div class="col-lg-8">
-							<form class="form-area contact-form text-right" id="myForm" action="mail.php" method="post">
-								<div class="row">	
-									<div class="col-lg-6 form-group">
-										<input name="name" placeholder="Enter your name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" class="common-input mb-20 form-control" required="" type="text">
-									
-										<input name="email" placeholder="Enter email address" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" class="common-input mb-20 form-control" required="" type="email">
-
-										<input name="subject" placeholder="Enter subject" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter subject'" class="common-input mb-20 form-control" required="" type="text">
-									</div>
-									<div class="col-lg-6 form-group">
-										<textarea class="common-textarea form-control" name="message" placeholder="Enter Messege" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Messege'" required=""></textarea>				
-									</div>
-									<div class="col-lg-12">
-										<div class="alert-msg" style="text-align: left;"></div>
-										<button class="genric-btn primary" style="float: right;">Send Message</button>											
-									</div>
-								</div>
-							</form>	
-						</div>
+                            </form>
+                        </div>
 					</div>
-				</div>	
+				</div>					
 			</section>
-			<!-- End contact-page Area -->
+			<!-- End banner Area -->
 
 			<!-- start footer Area -->		
 			<footer class="footer-area section-gap">
 				<div class="container">
-
 					<div class="row">
-						<div class="col-lg-4  col-md-6 col-sm-6">	
+						<div class="col-lg-4  col-md-6 col-sm-6">
 							<div class="single-footer-widget">
 								<h6>About Agency</h6>
 								<p>
@@ -155,11 +123,11 @@
 											<li><a href="about.php">Tentang</a></li>
 											<li><a href="contact.php">Kontak Kami</a></li>
 										</ul>
-									</div>										
+									</div>								
 								</div>							
 							</div>
 						</div>							
-						<!-- <div class="col-lg-3  col-md-6 col-sm-6">
+						<!-- <div class="col-lg-4  col-md-6 col-sm-6">
 							<div class="single-footer-widget">
 								<h6>Newsletter</h6>
 								<p>
