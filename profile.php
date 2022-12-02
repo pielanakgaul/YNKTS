@@ -29,6 +29,7 @@
 			<link rel="stylesheet" href="css/animate.min.css">
 			<link rel="stylesheet" href="css/owl.carousel.css">				
 			<link rel="stylesheet" href="css/main.css">
+            <link rel="stylesheet" href="css/style.css">
 		</head>
 		<body>	
 			<header id="header">
@@ -49,77 +50,151 @@
 					</div>
 				</div>
 			</header><!-- #header -->
-			
-			<!-- start banner Area -->
-			<section class="banner-area relative">
-				<div class="overlay overlay-bg"></div>				
-				<div class="container">
-
-				</div>					
-			</section>
-			<!-- End banner Area -->
-
-			<!-- Start popular-destination Area -->
-			<section class="popular-destination-area section-gap">
-				<div class="container">					
-				
-				</div>	
-			</section>
-			<!-- End popular-destination Area -->
-			
-
-			<!-- Start price Area -->
-			<section class="price-area section-gap">
-				<div class="container">
-
-				</div>	
-			</section>
-			<!-- End price Area -->
-			
-			<!-- Start other-issue Area -->
-			<section class="other-issue-area section-gap">
-				<div class="container">
-		           
-				</div>	
-			</section>
-			<!-- End other-issue Area -->
-			
-
-			<!-- Start testimonial Area -->
-		    <section class="testimonial-area section-gap">
-		        <div class="container">
-                		                    
-		        </div>
-		    </section>
-		    <!-- End testimonial Area -->
-
-			<!-- Start home-about Area -->
-			<section class="home-about-area">
-				<div class="container-fluid">
-					<div class="row align-items-center justify-content-end">
-						
-					</div>
-				</div>	
-			</section>
-			<!-- End home-about Area -->
-			
 	
 			<!-- Start blog Area -->
 			<section class="recent-blog-area section-gap">
-				<div class="container">
-	
-				</div>	
+                <div class="container">
+                    <div class="row gutters">
+                        <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <div class="account-settings">
+                                        <div class="user-profile">
+                                            <div class="user-avatar">
+                                                <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="Maxwell Admin">
+                                            </div>
+                                            <h5 class="user-name">Tegar Saputra</h5>
+                                            <h6 class="user-email">saputrategar@gmail.com</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <div class="row gutters">
+                                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                            <h6 class="mb-2 text-warning">Detail Profil</h6>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                            <div class="form-group">
+                                                <label for="fullName">Nama Lengkap</label>
+                                                <input type="text" class="form-control" id="fullName" placeholder="Masukan nama lengkap">
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                            <div class="form-group">
+                                                <label for="eMail">Email</label>
+                                                <input type="email" class="form-control" id="eMail" placeholder="Masukan email">
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                            <div class="form-group">
+                                                <label for="phone">Nomor Telepon</label>
+                                                <input type="text" class="form-control" id="phone" placeholder="Masukan nomor telepon">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row gutters">
+                                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                            <h6 class="mt-3 mb-2 text-warning">Alamat</h6>
+                                        </div>
+                                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                            <div class="form-group">
+                                                <label for="Street">Negara</label>
+                                                <input type="name" class="form-control" id="Street" placeholder="Masukan asal negara">
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                            <div class="form-group">
+                                                <label for="ciTy">Kota</label>
+                                                <input type="name" class="form-control" id="ciTy" placeholder="Masukan asal kota">
+                                            </div>
+                                        </div>
+                                        <!-- <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                            <div class="form-group">
+                                                <label for="sTate">State</label>
+                                                <input type="text" class="form-control" id="sTate" placeholder="Enter State">
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                            <div class="form-group">
+                                                <label for="zIp">Zip Code</label>
+                                                <input type="text" class="form-control" id="zIp" placeholder="Zip Code">
+                                            </div>
+                                        </div> -->
+                                    </div>
+                                    <div class="row gutters">
+                                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                            <div class="text-right">
+                                                <button type="button" id="submit" name="submit" class="btn btn-secondary">Cancel</button>
+                                                <button type="button" id="submit" name="submit" class="btn btn-primary">Update</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 			</section>
 			<!-- End recent-blog Area -->			
 
 			<!-- start footer Area -->		
 			<footer class="footer-area section-gap">
-				<div class="container">						
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-4  col-md-6 col-sm-6">
+							<div class="single-footer-widget">
+								<h6>About Agency</h6>
+								<p>
+									The world has become so fast paced that people don’t want to stand by reading a page of information, they would much rather look at a presentation and understand the message. It has come to a point 
+								</p>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-6">
+							<div class="single-footer-widget">
+								<h6>Navigation Links</h6>
+								<div class="row">
+									<div class="col">
+										<ul>
+											<li><a href="index.php">Beranda</a></li>
+											<li><a href="wisata.php">Wisata</a></li>
+										</ul>
+									</div>
+									<div class="col">
+										<ul>
+											<li><a href="about.php">Tentang</a></li>
+											<li><a href="contact.php">Kontak Kami</a></li>
+										</ul>
+									</div>									
+								</div>							
+							</div>
+						</div>							
+						<div class="col-lg-4  col-md-6 col-sm-6">
+							<div class="single-footer-widget mail-chimp">
+								<h6 class="mb-20">InstaFeed</h6>
+								<ul class="instafeed d-flex flex-wrap">
+									<li><img src="img/i1.jpg" alt=""></li>
+									<li><img src="img/i2.jpg" alt=""></li>
+									<li><img src="img/i3.jpg" alt=""></li>
+									<li><img src="img/i4.jpg" alt=""></li>
+									<li><img src="img/i5.jpg" alt=""></li>
+									<li><img src="img/i6.jpg" alt=""></li>
+									<li><img src="img/i7.jpg" alt=""></li>
+									<li><img src="img/i8.jpg" alt=""></li>
+								</ul>
+							</div>
+						</div>						
+					</div>
+
 					<div class="row footer-bottom d-flex justify-content-between align-items-center">
 						<p class="col-lg-8 col-sm-12 footer-text m-0"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | made by <a href="https://colorlib.com" target="_blank">Anoaland</a>
-                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                        </p>
+							Copyright &copy;<script>document.write(new Date().getFullYear());
+							</script> All rights reserved | made by <a href="https://colorlib.com" target="_blank">Anoaland</a>
+							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						</p>
 						<div class="col-lg-4 col-sm-12 footer-social">
 							<a href="#"><i class="fa fa-facebook"></i></a>
 							<a href="#"><i class="fa fa-twitter"></i></a>
@@ -129,7 +204,7 @@
 					</div>
 				</div>
 			</footer>
-			<!-- End footer Area -->	
+			<!-- End footer Area -->
 
 			<script src="js/vendor/jquery-2.2.4.min.js"></script>
 			<script src="js/popper.min.js"></script>
