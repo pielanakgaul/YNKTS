@@ -32,26 +32,6 @@
 		</head>
 		<body>	
 			<header id="header">
-				<!-- <div class="header-top">
-					<div class="container">
-			  		<div class="row align-items-center">
-			  			<div class="col-lg-6 col-sm-6 col-6 header-top-left">
-			  				<ul>
-			  					<li><a href="#">Visit Us</a></li>
-			  					<li><a href="#">Buy Tickets</a></li>
-			  				</ul>			
-			  			</div>
-			  			<div class="col-lg-6 col-sm-6 col-6 header-top-right">
-							<div class="header-social">
-								<a href="#"><i class="fa fa-facebook"></i></a>
-								<a href="#"><i class="fa fa-twitter"></i></a>
-								<a href="#"><i class="fa fa-dribbble"></i></a>
-								<a href="#"><i class="fa fa-behance"></i></a>
-							</div>
-			  			</div>
-			  		</div>			  					
-					</div>
-				</div> -->
 				<div class="container main-menu">
 					<div class="row align-items-center justify-content-between d-flex">
 				      <div id="logo">
@@ -62,7 +42,7 @@
 							<li><a href="index.php">Beranda</a></li>
 							<li><a href="wisata.php">Wisata</a></li>
 							<li><a href="about.php">Tentang</a></li>
-							<li><a href="contact.php">Kontak Kami</a></li>
+							<li><a href="contact.php">Kontak</a></li>
 							<li><a href="masuk.php">Masuk</a></li>
 				        </ul>
 				      </nav><!-- #nav-menu-container -->					      		  
@@ -327,133 +307,6 @@
 			<!-- End other-issue Area -->
 			
 
-			<!-- Start testimonial Area -->
-		    <section class="testimonial-area section-gap">
-		        <div class="container">
-		            <div class="row d-flex justify-content-center">
-		                <div class="menu-content pb-70 col-lg-8">
-		                    <div class="title text-center">
-		                        <h1 class="mb-10">Testimonial from our Clients</h1>
-		                        <p>The French Revolution constituted for the conscience of the dominant aristocratic class a fall from </p>
-		                    </div>
-		                </div>
-		            </div>
-		            <div class="row">
-		                <div class="active-testimonial">
-		                    <div class="single-testimonial item d-flex flex-row">
-		                        <div class="thumb">
-		                            <img class="img-fluid" src="img/elements/user1.png" alt="">
-		                        </div>
-		                        <div class="desc">
-		                            <p>
-		                                Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills, the bigger the payoff you.		     
-		                            </p>
-		                            <h4>Harriet Maxwell</h4>
-	                            	<div class="star">
-										<span class="fa fa-star checked"></span>
-										<span class="fa fa-star checked"></span>
-										<span class="fa fa-star checked"></span>
-										<span class="fa fa-star checked"></span>
-										<span class="fa fa-star"></span>				
-									</div>	
-		                        </div>
-		                    </div>
-		                    <div class="single-testimonial item d-flex flex-row">
-		                        <div class="thumb">
-		                            <img class="img-fluid" src="img/elements/user2.png" alt="">
-		                        </div>
-		                        <div class="desc">
-		                            <p>
-		                                A purpose is the eternal condition for success. Every former smoker can tell you just how hard it is to stop smoking cigarettes. However.
-		                            </p>
-		                            <h4>Carolyn Craig</h4>
-	                           		<div class="star">
-										<span class="fa fa-star checked"></span>
-										<span class="fa fa-star checked"></span>
-										<span class="fa fa-star checked"></span>
-										<span class="fa fa-star"></span>
-										<span class="fa fa-star"></span>			
-									</div>	
-		                        </div>
-		                    </div>
-		                    <div class="single-testimonial item d-flex flex-row">
-		                        <div class="thumb">
-		                            <img class="img-fluid" src="img/elements/user1.png" alt="">
-		                        </div>
-		                        <div class="desc">
-		                            <p>
-		                                Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills, the bigger the payoff you.		     
-		                            </p>
-		                            <h4>Harriet Maxwell</h4>
-	                            	<div class="star">
-										<span class="fa fa-star checked"></span>
-										<span class="fa fa-star checked"></span>
-										<span class="fa fa-star checked"></span>
-										<span class="fa fa-star checked"></span>
-										<span class="fa fa-star"></span>				
-									</div>	
-		                        </div>
-		                    </div>
-		                    <div class="single-testimonial item d-flex flex-row">
-		                        <div class="thumb">
-		                            <img class="img-fluid" src="img/elements/user2.png" alt="">
-		                        </div>
-		                        <div class="desc">
-		                            <p>
-		                                A purpose is the eternal condition for success. Every former smoker can tell you just how hard it is to stop smoking cigarettes. However.
-		                            </p>
-		                            <h4>Carolyn Craig</h4>
-	                           		<div class="star">
-										<span class="fa fa-star checked"></span>
-										<span class="fa fa-star checked"></span>
-										<span class="fa fa-star checked"></span>
-										<span class="fa fa-star"></span>
-										<span class="fa fa-star"></span>			
-									</div>	
-		                        </div>
-		                    </div>
-		                    <div class="single-testimonial item d-flex flex-row">
-		                        <div class="thumb">
-		                            <img class="img-fluid" src="img/elements/user1.png" alt="">
-		                        </div>
-		                        <div class="desc">
-		                            <p>
-		                                Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills, the bigger the payoff you.		     
-		                            </p>
-		                            <h4>Harriet Maxwell</h4>
-	                            	<div class="star">
-										<span class="fa fa-star checked"></span>
-										<span class="fa fa-star checked"></span>
-										<span class="fa fa-star checked"></span>
-										<span class="fa fa-star checked"></span>
-										<span class="fa fa-star"></span>				
-									</div>	
-		                        </div>
-		                    </div>
-		                    <div class="single-testimonial item d-flex flex-row">
-		                        <div class="thumb">
-		                            <img class="img-fluid" src="img/elements/user2.png" alt="">
-		                        </div>
-		                        <div class="desc">
-		                            <p>
-		                                A purpose is the eternal condition for success. Every former smoker can tell you just how hard it is to stop smoking cigarettes. However.
-		                            </p>
-		                            <h4>Carolyn Craig</h4>
-	                           		<div class="star">
-										<span class="fa fa-star checked"></span>
-										<span class="fa fa-star checked"></span>
-										<span class="fa fa-star checked"></span>
-										<span class="fa fa-star"></span>
-										<span class="fa fa-star"></span>			
-									</div>	
-		                        </div>
-		                    </div>		                    		                    
-		                </div>
-		            </div>
-		        </div>
-		    </section>
-		    <!-- End testimonial Area -->
-
 			<!-- Start home-about Area -->
 			<section class="home-about-area">
 				<div class="container-fluid">
@@ -496,16 +349,6 @@
 									<img class="img-fluid" src="img/b1.jpg" alt="">
 								</div>
 								<div class="details">
-									<div class="tags">
-										<ul>
-											<li>
-												<a href="#">Travel</a>
-											</li>
-											<li>
-												<a href="#">Life Style</a>
-											</li>											
-										</ul>
-									</div>
 									<a href="#"><h4 class="title">Low Cost Advertising</h4></a>
 									<p>
 										Acres of Diamonds… you’ve read the famous story, or at least had it related to you. A farmer.
@@ -518,16 +361,6 @@
 									<img class="img-fluid" src="img/b2.jpg" alt="">
 								</div>
 								<div class="details">
-									<div class="tags">
-										<ul>
-											<li>
-												<a href="#">Travel</a>
-											</li>
-											<li>
-												<a href="#">Life Style</a>
-											</li>											
-										</ul>
-									</div>
 									<a href="#"><h4 class="title">Creative Outdoor Ads</h4></a>
 									<p>
 										Acres of Diamonds… you’ve read the famous story, or at least had it related to you. A farmer.
@@ -540,16 +373,6 @@
 									<img class="img-fluid" src="img/b3.jpg" alt="">
 								</div>
 								<div class="details">
-									<div class="tags">
-										<ul>
-											<li>
-												<a href="#">Travel</a>
-											</li>
-											<li>
-												<a href="#">Life Style</a>
-											</li>											
-										</ul>
-									</div>
 									<a href="#"><h4 class="title">It's Classified How To Utilize Free</h4></a>
 									<p>
 										Acres of Diamonds… you’ve read the famous story, or at least had it related to you. A farmer.
@@ -562,16 +385,6 @@
 									<img class="img-fluid" src="img/b1.jpg" alt="">
 								</div>
 								<div class="details">
-									<div class="tags">
-										<ul>
-											<li>
-												<a href="#">Travel</a>
-											</li>
-											<li>
-												<a href="#">Life Style</a>
-											</li>											
-										</ul>
-									</div>
 									<a href="#"><h4 class="title">Low Cost Advertising</h4></a>
 									<p>
 										Acres of Diamonds… you’ve read the famous story, or at least had it related to you. A farmer.
@@ -584,16 +397,6 @@
 									<img class="img-fluid" src="img/b2.jpg" alt="">
 								</div>
 								<div class="details">
-									<div class="tags">
-										<ul>
-											<li>
-												<a href="#">Travel</a>
-											</li>
-											<li>
-												<a href="#">Life Style</a>
-											</li>											
-										</ul>
-									</div>
 									<a href="#"><h4 class="title">Creative Outdoor Ads</h4></a>
 									<p>
 										Acres of Diamonds… you’ve read the famous story, or at least had it related to you. A farmer.
@@ -606,16 +409,6 @@
 									<img class="img-fluid" src="img/b3.jpg" alt="">
 								</div>
 								<div class="details">
-									<div class="tags">
-										<ul>
-											<li>
-												<a href="#">Travel</a>
-											</li>
-											<li>
-												<a href="#">Life Style</a>
-											</li>											
-										</ul>
-									</div>
 									<a href="#"><h4 class="title">It's Classified How To Utilize Free</h4></a>
 									<p>
 										Acres of Diamonds… you’ve read the famous story, or at least had it related to you. A farmer.
@@ -655,7 +448,7 @@
 									<div class="col">
 										<ul>
 											<li><a href="about.php">Tentang</a></li>
-											<li><a href="contact.php">Kontak Kami</a></li>
+											<li><a href="contact.php">Kontak</a></li>
 										</ul>
 									</div>									
 								</div>							

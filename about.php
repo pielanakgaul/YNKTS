@@ -14,7 +14,7 @@
 		<!-- meta character set -->
 		<meta charset="UTF-8">
 		<!-- Site Title -->
-		<title>Travel</title>
+		<title>Tentang</title>
 
 		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
 			<!--
@@ -42,7 +42,7 @@
 							<li><a href="index.php">Beranda</a></li>
 							<li><a href="wisata.php">Wisata</a></li>
 							<li><a href="about.php">Tentang</a></li>
-							<li><a href="contact.php">Kontak Kami</a></li>
+							<li><a href="contact.php">Kontak</a></li>
 							<li><a href="masuk.php">Masuk</a></li>
 				        </ul>
 				      </nav><!-- #nav-menu-container -->					      		  
@@ -58,9 +58,9 @@
 					<div class="row d-flex align-items-center justify-content-center">
 						<div class="about-content col-lg-12">
 							<h1 class="text-white">
-								Tentang Kami				
+								Tentang				
 							</h1>	
-							<p class="text-white link-nav"><a href="index.php">Beranda </a>  <span class="lnr lnr-arrow-right"></span>  <a href="about.php"> Tentang Kami</a></p>
+							<p class="text-white link-nav"><a href="index.php">Beranda </a>  <span class="lnr lnr-arrow-right"></span>  <a href="about.php"> Tentang</a></p>
 						</div>	
 					</div>
 				</div>
@@ -420,29 +420,12 @@
 									<div class="col">
 										<ul>
 											<li><a href="about.php">Tentang</a></li>
-											<li><a href="contact.php">Kontak Kami</a></li>
+											<li><a href="contact.php">Kontak</a></li>
 										</ul>
 									</div>								
 								</div>							
 							</div>
 						</div>							
-						<!-- <div class="col-lg-3  col-md-6 col-sm-6">
-							<div class="single-footer-widget">
-								<h6>Newsletter</h6>
-								<p>
-									For business professionals caught between high OEM price and mediocre print and graphic output.									
-								</p>								
-								<div id="mc_embed_signup">
-									<form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="subscription relative">
-										<div class="input-group d-flex flex-row">
-											<input name="EMAIL" placeholder="Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address '" required="" type="email">
-											<button class="btn bb-btn"><span class="lnr lnr-location"></span></button>		
-										</div>									
-										<div class="mt-10 info"></div>
-									</form>
-								</div>
-							</div>
-						</div> -->
 						<div class="col-lg-4  col-md-6 col-sm-6">
 							<div class="single-footer-widget mail-chimp">
 								<h6 class="mb-20">InstaFeed</h6>

@@ -43,7 +43,7 @@
 							<li><a href="index.php">Beranda</a></li>
 							<li><a href="wisata.php">Wisata</a></li>
 							<li><a href="about.php">Tentang</a></li>
-							<li><a href="contact.php">Kontak Kami</a></li>
+							<li><a href="contact.php">Kontak</a></li>
 							<li><a href="masuk.php">Masuk</a></li>
 				        </ul>
 				      </nav><!-- #nav-menu-container -->					      		  
@@ -166,7 +166,7 @@
 									<div class="col">
 										<ul>
 											<li><a href="about.php">Tentang</a></li>
-											<li><a href="contact.php">Kontak Kami</a></li>
+											<li><a href="contact.php">Kontak</a></li>
 										</ul>
 									</div>									
 								</div>							
