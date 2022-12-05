@@ -35,7 +35,7 @@
 				<div class="container main-menu">
 					<div class="row align-items-center justify-content-between d-flex">
 				      <div id="logo">
-				        <a href="index.php"><img src="img/logo.png" alt="" title="" /></a>
+				        <a href="index.php"><img style="width: 100px; height: 50px;" src="img/AnoaLand3.png" alt="" title="" /></a>
 				      </div>
 				      <nav id="nav-menu-container">
 				        <ul class="nav-menu">
@@ -56,12 +56,12 @@
 				<div class="container">
 					<div class="row fullscreen align-items-center justify-content-center">
 						<div class="col-lg-6 col-md-6 banner-left ">
-							<h6 class="text-white">Away from monotonous life</h6>
-							<h1 class="text-white">Magical Travel</h1>
-							<p class="text-white">
-								If you are looking at blank cassettes on the web, you may be very confused at the difference in price. You may see some for as low as $.17 each.
+							<h6 class="text-white" style="text-transform: none !important;" >Temukan destinasi liburan anda di</h6>
+							<h1 class="text-white">Anoa Land</h1>
+							<p class="text-white" style="font-size: 1rem;">
+								Menyajikan informasi yang lengkap seputar destinasi wisata yang ada di Sulawesi Tenggara.
 							</p>
-							<a href="#" class="primary-btn text-uppercase">Get Started</a>
+							<a href="#" class="primary-btn text-uppercase">Mulai sekarang</a>
 						</div>
 						
 					</div>
@@ -121,10 +121,6 @@
 				</div>	
 			</section>
 			<!-- End popular-destination Area -->
-			
-
-			<!-- Start price Area -->
-			<!-- End price Area -->
 			
 
 			<!-- Start other-issue Area -->

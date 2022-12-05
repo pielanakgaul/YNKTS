@@ -35,7 +35,7 @@
 				<div class="container main-menu">
 					<div class="row align-items-center justify-content-between d-flex">
 				      <div id="logo">
-				        <a href="index.php"><img src="img/logo.png" alt="" title="" /></a>
+				        <a href="index.php"><img style="width: 100px; height: 50px;" src="img/AnoaLand3.png" alt="" title="" /></a>
 				      </div>
 				      <nav id="nav-menu-container">
 				        <ul class="nav-menu">
@@ -75,10 +75,10 @@
 							<img class="img-fluid" src="img/about/info-img.jpg" alt="">
 						</div>
 						<div class="col-lg-6 info-right">
-							<h6>About Us</h6>
-							<h1>Who We Are?</h1>
+							<h6>Tentang</h6>
+							<h1>Apa itu Anoa Land?</h1>
 							<p>
-								Here, I focus on a range of items and features that we use in life without giving them a second thought. such as Coca Cola. Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+								Di Anoa Land anda bisa menemukan berbagai informasi mengenai destinasi wisata di Sulawesi Tenggara.
 							</p>
 						</div>
 					</div>
