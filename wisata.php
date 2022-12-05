@@ -16,7 +16,6 @@
 		<!-- Site Title -->
 		<title>Wisata</title>
 
-		<link rel="stylesheet" href="Travel/css/style.css">
 
 		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
 			<!--
@@ -37,7 +36,7 @@
 				<div class="container main-menu">
 					<div class="row align-items-center justify-content-between d-flex">
 				      <div id="logo">
-				        <a href="index.html"><img src="img/logo.png" alt="" title="" /></a>
+				        <a href="index.php"><img src="img/logo.png" alt="" title="" /></a>
 				      </div>
 				      <nav id="nav-menu-container">
 				        <ul class="nav-menu">
@@ -61,7 +60,7 @@
 							<h1 class="text-white">
 								Wisata				
 							</h1>	
-							<p class="text-white link-nav"><a href="index.php">Beranda </a>  <span class="lnr lnr-arrow-right"></span>  <a href="hotels.html"> Wisata</a></p>
+							<p class="text-white link-nav"><a href="index.php">Beranda </a>  <span class="lnr lnr-arrow-right"></span>  <a href="wisata.php"> Wisata Selengkapnya</a></p>
 						</div>	
 					</div>
 				</div>
@@ -74,8 +73,8 @@
 		            <div class="row d-flex justify-content-center">
 		                <div class="menu-content pb-40 col-lg-8">
 		                    <div class="title text-center">
-		                        <h1 class="mb-10">Popular Destinations</h1>
-		                        <p>We all live in an age that belongs to the young at heart. Life that is becoming extremely fast, day to.</p>
+		                        <h1 class="mb-10">Destinasi Populer di Sulawesi Tenggara</h1>
+		                        <p>Destinasi populer disetiap kabupaten yang ada di Sulawesi Tenggara</p>
 		                    </div>
 		                </div>
 		            </div>						
@@ -87,46 +86,21 @@
 								</div>
 								<div class="details">
 									<h4 class="d-flex justify-content-between">
-										<span>Hilton Star Hotel</span>                              	
-										<div class="star">
-											<span class="fa fa-star checked"></span>
-											<span class="fa fa-star checked"></span>
-											<span class="fa fa-star checked"></span>
-											<span class="fa fa-star checked"></span>
-											<span class="fa fa-star"></span>				
-										</div>	
+										<span>Hilton Star Hotel</span>                              
 									</h4>
 									<p>
-										View on map   |   49 Reviews
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis autem asperiores cupiditate, neque vero atque odit laudantium sint magnam impedit fugiat corrupti eum repellat at, laboriosam vitae hic, eligendi aut.
 									</p>
-									<ul class="package-list">
-										<li class="d-flex justify-content-between align-items-center">
-											<span>Swimming pool</span>
-											<span>Yes</span>
-										</li>
-										<li class="d-flex justify-content-between align-items-center">
-											<span>Gymnesium</span>
-											<span>No</span>
-										</li>
-										<li class="d-flex justify-content-between align-items-center">
-											<span>Wi-fi</span>
-											<span>Yes</span>
-										</li>
-										<li class="d-flex justify-content-between align-items-center">
-											<span>Room Service</span>
-											<span>No</span>
-										</li>
-										<li class="d-flex justify-content-between align-items-center">
-											<span>Air Condition</span>
-											<span>Yes</span>
-										</li>
-										<li class="d-flex justify-content-between align-items-center">
-											<span>Restaurant</span>
-											<span>Yes</span>
-										</li>												
-										<li class="d-flex justify-content-between align-items-center">
-											<span>Price per night</span>
-											<a href="#" class="price-btn">$250</a>
+									<ul class="package-list">											
+										<li class="d-flex justify-content-between align-items-center mt-1 mr-auto ml-auto">
+											<span class="d-flex">
+												<svg class="mr-1" xmlns="http://www.w3.org/2000/svg" width="30" height="30" preserveAspectRatio="xMidYMid meet" viewBox="0 0 30 30"><path fill="currentColor" d="M12 12q.825 0 1.413-.588Q14 10.825 14 10t-.587-1.413Q12.825 8 12 8q-.825 0-1.412.587Q10 9.175 10 10q0 .825.588 1.412Q11.175 12 12 12Zm0 10q-4.025-3.425-6.012-6.363Q4 12.7 4 10.2q0-3.75 2.413-5.975Q8.825 2 12 2t5.587 2.225Q20 6.45 20 10.2q0 2.5-1.987 5.437Q16.025 18.575 12 22Z"/></svg>
+												<h6 class="d-flex mt-1">Konawe Selatan</h6> 
+											</span>
+											<span class="">
+												<a href="#" class="link-secondary">Selengkapnya</a>
+												<!-- <a href="wisata.php" class="link-secondary">Selengkapnya</a> -->
+											</span>
 										</li>													
 									</ul>
 								</div>
@@ -139,46 +113,18 @@
 								</div>
 								<div class="details">
 									<h4 class="d-flex justify-content-between">
-										<span>Hilton Star Hotel</span>                              	
-										<div class="star">
-											<span class="fa fa-star checked"></span>
-											<span class="fa fa-star checked"></span>
-											<span class="fa fa-star checked"></span>
-											<span class="fa fa-star checked"></span>
-											<span class="fa fa-star"></span>				
-										</div>	
+										<span>Hilton Star Hotel</span>                              
 									</h4>
 									<p>
-										View on map   |   49 Reviews
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis autem asperiores cupiditate, neque vero atque odit laudantium sint magnam impedit fugiat corrupti eum repellat at, laboriosam vitae hic, eligendi aut.
 									</p>
-									<ul class="package-list">
+									<ul class="package-list">											
 										<li class="d-flex justify-content-between align-items-center">
-											<span>Swimming pool</span>
-											<span>Yes</span>
-										</li>
-										<li class="d-flex justify-content-between align-items-center">
-											<span>Gymnesium</span>
-											<span>No</span>
-										</li>
-										<li class="d-flex justify-content-between align-items-center">
-											<span>Wi-fi</span>
-											<span>Yes</span>
-										</li>
-										<li class="d-flex justify-content-between align-items-center">
-											<span>Room Service</span>
-											<span>No</span>
-										</li>
-										<li class="d-flex justify-content-between align-items-center">
-											<span>Air Condition</span>
-											<span>Yes</span>
-										</li>
-										<li class="d-flex justify-content-between align-items-center">
-											<span>Restaurant</span>
-											<span>Yes</span>
-										</li>												
-										<li class="d-flex justify-content-between align-items-center">
-											<span>Price per night</span>
-											<a href="#" class="price-btn">$250</a>
+											<span class="d-flex">
+												<svg class="mr-1" xmlns="http://www.w3.org/2000/svg" width="30" height="30" preserveAspectRatio="xMidYMid meet" viewBox="0 0 30 30"><path fill="currentColor" d="M12 12q.825 0 1.413-.588Q14 10.825 14 10t-.587-1.413Q12.825 8 12 8q-.825 0-1.412.587Q10 9.175 10 10q0 .825.588 1.412Q11.175 12 12 12Zm0 10q-4.025-3.425-6.012-6.363Q4 12.7 4 10.2q0-3.75 2.413-5.975Q8.825 2 12 2t5.587 2.225Q20 6.45 20 10.2q0 2.5-1.987 5.437Q16.025 18.575 12 22Z"/></svg>
+												<h6 class="d-flex mt-1 ">Muna Barat</h6> 
+											</span>
+											<!-- <a href="#" class="price-btn">$250</a> -->
 										</li>													
 									</ul>
 								</div>
@@ -191,46 +137,18 @@
 								</div>
 								<div class="details">
 									<h4 class="d-flex justify-content-between">
-										<span>Hilton Star Hotel</span>                              	
-										<div class="star">
-											<span class="fa fa-star checked"></span>
-											<span class="fa fa-star checked"></span>
-											<span class="fa fa-star checked"></span>
-											<span class="fa fa-star checked"></span>
-											<span class="fa fa-star"></span>				
-										</div>	
+										<span>Hilton Star Hotel</span>                              
 									</h4>
 									<p>
-										View on map   |   49 Reviews
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis autem asperiores cupiditate, neque vero atque odit laudantium sint magnam impedit fugiat corrupti eum repellat at, laboriosam vitae hic, eligendi aut.
 									</p>
-									<ul class="package-list">
+									<ul class="package-list">											
 										<li class="d-flex justify-content-between align-items-center">
-											<span>Swimming pool</span>
-											<span>Yes</span>
-										</li>
-										<li class="d-flex justify-content-between align-items-center">
-											<span>Gymnesium</span>
-											<span>No</span>
-										</li>
-										<li class="d-flex justify-content-between align-items-center">
-											<span>Wi-fi</span>
-											<span>Yes</span>
-										</li>
-										<li class="d-flex justify-content-between align-items-center">
-											<span>Room Service</span>
-											<span>No</span>
-										</li>
-										<li class="d-flex justify-content-between align-items-center">
-											<span>Air Condition</span>
-											<span>Yes</span>
-										</li>
-										<li class="d-flex justify-content-between align-items-center">
-											<span>Restaurant</span>
-											<span>Yes</span>
-										</li>												
-										<li class="d-flex justify-content-between align-items-center">
-											<span>Price per night</span>
-											<a href="#" class="price-btn">$250</a>
+											<span class="d-flex">
+												<svg class="mr-1" xmlns="http://www.w3.org/2000/svg" width="30" height="30" preserveAspectRatio="xMidYMid meet" viewBox="0 0 30 30"><path fill="currentColor" d="M12 12q.825 0 1.413-.588Q14 10.825 14 10t-.587-1.413Q12.825 8 12 8q-.825 0-1.412.587Q10 9.175 10 10q0 .825.588 1.412Q11.175 12 12 12Zm0 10q-4.025-3.425-6.012-6.363Q4 12.7 4 10.2q0-3.75 2.413-5.975Q8.825 2 12 2t5.587 2.225Q20 6.45 20 10.2q0 2.5-1.987 5.437Q16.025 18.575 12 22Z"/></svg>
+												<h6 class="d-flex mt-1 ">Buton Tengah</h6> 
+											</span>
+											<!-- <a href="#" class="price-btn">$250</a> -->
 										</li>													
 									</ul>
 								</div>
@@ -243,46 +161,18 @@
 								</div>
 								<div class="details">
 									<h4 class="d-flex justify-content-between">
-										<span>Hilton Star Hotel</span>                              	
-										<div class="star">
-											<span class="fa fa-star checked"></span>
-											<span class="fa fa-star checked"></span>
-											<span class="fa fa-star checked"></span>
-											<span class="fa fa-star checked"></span>
-											<span class="fa fa-star"></span>				
-										</div>	
+										<span>Hilton Star Hotel</span>                              
 									</h4>
 									<p>
-										View on map   |   49 Reviews
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio veniam quod consequuntur cum nesciunt ab, maxime officiis, sint quibusdam ipsam velit id perferendis? Aspernatur ratione cupiditate quisquam ad id inventore.
 									</p>
-									<ul class="package-list">
+									<ul class="package-list">											
 										<li class="d-flex justify-content-between align-items-center">
-											<span>Swimming pool</span>
-											<span>Yes</span>
-										</li>
-										<li class="d-flex justify-content-between align-items-center">
-											<span>Gymnesium</span>
-											<span>No</span>
-										</li>
-										<li class="d-flex justify-content-between align-items-center">
-											<span>Wi-fi</span>
-											<span>Yes</span>
-										</li>
-										<li class="d-flex justify-content-between align-items-center">
-											<span>Room Service</span>
-											<span>No</span>
-										</li>
-										<li class="d-flex justify-content-between align-items-center">
-											<span>Air Condition</span>
-											<span>Yes</span>
-										</li>
-										<li class="d-flex justify-content-between align-items-center">
-											<span>Restaurant</span>
-											<span>Yes</span>
-										</li>												
-										<li class="d-flex justify-content-between align-items-center">
-											<span>Price per night</span>
-											<a href="#" class="price-btn">$250</a>
+											<span class="d-flex">
+												<svg class="mr-1" xmlns="http://www.w3.org/2000/svg" width="30" height="30" preserveAspectRatio="xMidYMid meet" viewBox="0 0 30 30"><path fill="currentColor" d="M12 12q.825 0 1.413-.588Q14 10.825 14 10t-.587-1.413Q12.825 8 12 8q-.825 0-1.412.587Q10 9.175 10 10q0 .825.588 1.412Q11.175 12 12 12Zm0 10q-4.025-3.425-6.012-6.363Q4 12.7 4 10.2q0-3.75 2.413-5.975Q8.825 2 12 2t5.587 2.225Q20 6.45 20 10.2q0 2.5-1.987 5.437Q16.025 18.575 12 22Z"/></svg>
+												<h6 class="d-flex mt-1 ">Moramo</h6> 
+											</span>
+											<!-- <a href="#" class="price-btn">$250</a> -->
 										</li>													
 									</ul>
 								</div>
@@ -295,46 +185,18 @@
 								</div>
 								<div class="details">
 									<h4 class="d-flex justify-content-between">
-										<span>Hilton Star Hotel</span>                              	
-										<div class="star">
-											<span class="fa fa-star checked"></span>
-											<span class="fa fa-star checked"></span>
-											<span class="fa fa-star checked"></span>
-											<span class="fa fa-star checked"></span>
-											<span class="fa fa-star"></span>				
-										</div>	
+										<span>Hilton Star Hotel</span>                              
 									</h4>
 									<p>
-										View on map   |   49 Reviews
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis autem asperiores cupiditate, neque vero atque odit laudantium sint magnam impedit fugiat corrupti eum repellat at, laboriosam vitae hic, eligendi aut.
 									</p>
-									<ul class="package-list">
+									<ul class="package-list">											
 										<li class="d-flex justify-content-between align-items-center">
-											<span>Swimming pool</span>
-											<span>Yes</span>
-										</li>
-										<li class="d-flex justify-content-between align-items-center">
-											<span>Gymnesium</span>
-											<span>No</span>
-										</li>
-										<li class="d-flex justify-content-between align-items-center">
-											<span>Wi-fi</span>
-											<span>Yes</span>
-										</li>
-										<li class="d-flex justify-content-between align-items-center">
-											<span>Room Service</span>
-											<span>No</span>
-										</li>
-										<li class="d-flex justify-content-between align-items-center">
-											<span>Air Condition</span>
-											<span>Yes</span>
-										</li>
-										<li class="d-flex justify-content-between align-items-center">
-											<span>Restaurant</span>
-											<span>Yes</span>
-										</li>												
-										<li class="d-flex justify-content-between align-items-center">
-											<span>Price per night</span>
-											<a href="#" class="price-btn">$250</a>
+											<span class="d-flex">
+												<svg class="mr-1" xmlns="http://www.w3.org/2000/svg" width="30" height="30" preserveAspectRatio="xMidYMid meet" viewBox="0 0 30 30"><path fill="currentColor" d="M12 12q.825 0 1.413-.588Q14 10.825 14 10t-.587-1.413Q12.825 8 12 8q-.825 0-1.412.587Q10 9.175 10 10q0 .825.588 1.412Q11.175 12 12 12Zm0 10q-4.025-3.425-6.012-6.363Q4 12.7 4 10.2q0-3.75 2.413-5.975Q8.825 2 12 2t5.587 2.225Q20 6.45 20 10.2q0 2.5-1.987 5.437Q16.025 18.575 12 22Z"/></svg>
+												<h6 class="d-flex mt-1 ">Kendari</h6> 
+											</span>
+											<!-- <a href="#" class="price-btn">$250</a> -->
 										</li>													
 									</ul>
 								</div>
@@ -347,19 +209,21 @@
 								</div>
 								<div class="details">
 									<h4 class="d-flex justify-content-between">
-										<span>Hilton Star Hotel</span>                              	
-										<div class="star">
-											<span class="fa fa-star checked"></span>
-											<span class="fa fa-star checked"></span>
-											<span class="fa fa-star checked"></span>
-											<span class="fa fa-star checked"></span>
-											<span class="fa fa-star"></span>				
-										</div>	
+										<span>Hilton Star Hotel</span>                              
 									</h4>
 									<p>
-										View on map   |   49 Reviews
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis autem asperiores cupiditate, neque vero atque odit laudantium sint magnam impedit fugiat corrupti eum repellat at, laboriosam vitae hic, eligendi aut.
 									</p>
-									<ul class="package-list">
+									<ul class="package-list">											
+										<li class="d-flex justify-content-between align-items-center">
+											<span class="d-flex">
+												<svg class="mr-1" xmlns="http://www.w3.org/2000/svg" width="30" height="30" preserveAspectRatio="xMidYMid meet" viewBox="0 0 30 30"><path fill="currentColor" d="M12 12q.825 0 1.413-.588Q14 10.825 14 10t-.587-1.413Q12.825 8 12 8q-.825 0-1.412.587Q10 9.175 10 10q0 .825.588 1.412Q11.175 12 12 12Zm0 10q-4.025-3.425-6.012-6.363Q4 12.7 4 10.2q0-3.75 2.413-5.975Q8.825 2 12 2t5.587 2.225Q20 6.45 20 10.2q0 2.5-1.987 5.437Q16.025 18.575 12 22Z"/></svg>
+												<h6 class="d-flex mt-1 ">Muna</h6> 
+											</span>
+											<!-- <a href="#" class="price-btn">$250</a> -->
+										</li>													
+									</ul>
+									<!-- <ul class="package-list">
 										<li class="d-flex justify-content-between align-items-center">
 											<span>Swimming pool</span>
 											<span>Yes</span>
@@ -388,7 +252,7 @@
 											<span>Price per night</span>
 											<a href="#" class="price-btn">$250</a>
 										</li>													
-									</ul>
+									</ul> -->
 								</div>
 							</div>
 						</div>																														
@@ -399,7 +263,7 @@
 			
 
 			<!-- Start home-about Area -->
-			<section class="home-about-area">
+			<!-- <section class="home-about-area">
 				<div class="container-fluid">
 					<div class="row align-items-center justify-content-end">
 						<div class="col-lg-6 col-md-12 home-about-left">
@@ -418,7 +282,7 @@
 						</div>
 					</div>
 				</div>	
-			</section>
+			</section> -->
 			<!-- End home-about Area -->
 
 			<!-- start footer Area -->		
@@ -485,6 +349,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 			</footer>
 			<!-- End footer Area -->	
 
+			<script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
 			<script src="js/vendor/jquery-2.2.4.min.js"></script>
 			<script src="js/popper.min.js"></script>
 			<script src="js/vendor/bootstrap.min.js"></script>			
