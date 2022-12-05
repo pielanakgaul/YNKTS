@@ -112,18 +112,6 @@
                                                 <input type="name" class="form-control" id="ciTy" placeholder="Masukan asal kota">
                                             </div>
                                         </div>
-                                        <!-- <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                                            <div class="form-group">
-                                                <label for="sTate">State</label>
-                                                <input type="text" class="form-control" id="sTate" placeholder="Enter State">
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                                            <div class="form-group">
-                                                <label for="zIp">Zip Code</label>
-                                                <input type="text" class="form-control" id="zIp" placeholder="Zip Code">
-                                            </div>
-                                        </div> -->
                                     </div>
                                     <div class="row gutters">
                                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
