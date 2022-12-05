@@ -75,7 +75,7 @@
 		            <div class="row d-flex justify-content-center">
 		                <div class="menu-content pb-70 col-lg-8">
 		                    <div class="title text-center">
-		                        <h1 class="mb-10">Popular Destinations</h1>
+		                        <h1 class="mb-10">Destinasi Terbaik di Sulawesi Tenggara</h1>
 		                        <p>We all live in an age that belongs to the young at heart. Life that is becoming extremely fast, day.</p>
 		                    </div>
 		                </div>
@@ -87,10 +87,9 @@
 									<div class="overlay overlay-bg"></div>
 									<img class="img-fluid" src="img/d1.jpg" alt="">
 								</div>
-								<div class="desc">	
-									<a href="#" class="price-btn">$150</a>			
-									<h4>Mountain River</h4>
-									<p>Paraguay</p>			
+								<div class="desc">			
+									<h4>Pantai Labengki</h4>
+									<p>Lasolo, Konawe Utara</p>			
 								</div>
 							</div>
 						</div>
@@ -100,10 +99,9 @@
 									<div class="overlay overlay-bg"></div>
 									<img class="img-fluid" src="img/d2.jpg" alt="">
 								</div>
-								<div class="desc">	
-									<a href="#" class="price-btn">$250</a>			
-									<h4>Dream City</h4>
-									<p>Paris</p>			
+								<div class="desc">			
+									<h4>Air Terjun Moramo</h4>
+									<p>Moramo, Konawe Selatan</p>			
 								</div>
 							</div>
 						</div>
@@ -113,10 +111,9 @@
 									<div class="overlay overlay-bg"></div>
 									<img class="img-fluid" src="img/d3.jpg" alt="">
 								</div>
-								<div class="desc">	
-									<a href="#" class="price-btn">$350</a>			
-									<h4>Cloud Mountain</h4>
-									<p>Sri Lanka</p>			
+								<div class="desc">		
+									<h4>Pulau Bokori</h4>
+									<p>Toronipa, Konawe</p>			
 								</div>
 							</div>
 						</div>												
@@ -127,113 +124,6 @@
 			
 
 			<!-- Start price Area -->
-			<section class="price-area section-gap">
-				<div class="container">
-		            <div class="row d-flex justify-content-center">
-		                <div class="menu-content pb-70 col-lg-8">
-		                    <div class="title text-center">
-		                        <h1 class="mb-10">We Provide Affordable Prices</h1>
-		                        <p>Well educated, intellectual people, especially scientists at all times demonstrate considerably.</p>
-		                    </div>
-		                </div>
-		            </div>						
-					<div class="row">
-						<div class="col-lg-4">
-							<div class="single-price">
-								<h4>Cheap Packages</h4>
-								<ul class="price-list">
-									<li class="d-flex justify-content-between align-items-center">
-										<span>New York</span>
-										<a href="#" class="price-btn">$1500</a>
-									</li>
-									<li class="d-flex justify-content-between align-items-center">
-										<span>Maldives</span>
-										<a href="#" class="price-btn">$1500</a>
-									</li>
-									<li class="d-flex justify-content-between align-items-center">
-										<span>Sri Lanka</span>
-										<a href="#" class="price-btn">$1500</a>
-									</li>
-									<li class="d-flex justify-content-between align-items-center">
-										<span>Nepal</span>
-										<a href="#" class="price-btn">$1500</a>
-									</li>
-									<li class="d-flex justify-content-between align-items-center">
-										<span>Thiland</span>
-										<a href="#" class="price-btn">$1500</a>
-									</li>	
-									<li class="d-flex justify-content-between align-items-center">
-										<span>Singapore</span>
-										<a href="#" class="price-btn">$1500</a>
-									</li>														
-								</ul>
-							</div>
-						</div>
-						<div class="col-lg-4">
-							<div class="single-price">
-								<h4>Luxury Packages</h4>
-								<ul class="price-list">
-									<li class="d-flex justify-content-between align-items-center">
-										<span>New York</span>
-										<a href="#" class="price-btn">$1500</a>
-									</li>
-									<li class="d-flex justify-content-between align-items-center">
-										<span>Maldives</span>
-										<a href="#" class="price-btn">$1500</a>
-									</li>
-									<li class="d-flex justify-content-between align-items-center">
-										<span>Sri Lanka</span>
-										<a href="#" class="price-btn">$1500</a>
-									</li>
-									<li class="d-flex justify-content-between align-items-center">
-										<span>Nepal</span>
-										<a href="#" class="price-btn">$1500</a>
-									</li>
-									<li class="d-flex justify-content-between align-items-center">
-										<span>Thiland</span>
-										<a href="#" class="price-btn">$1500</a>
-									</li>	
-									<li class="d-flex justify-content-between align-items-center">
-										<span>Singapore</span>
-										<a href="#" class="price-btn">$1500</a>
-									</li>														
-								</ul>
-							</div>
-						</div>
-						<div class="col-lg-4">
-							<div class="single-price">
-								<h4>Camping Packages</h4>
-								<ul class="price-list">
-									<li class="d-flex justify-content-between align-items-center">
-										<span>New York</span>
-										<a href="#" class="price-btn">$1500</a>
-									</li>
-									<li class="d-flex justify-content-between align-items-center">
-										<span>Maldives</span>
-										<a href="#" class="price-btn">$1500</a>
-									</li>
-									<li class="d-flex justify-content-between align-items-center">
-										<span>Sri Lanka</span>
-										<a href="#" class="price-btn">$1500</a>
-									</li>
-									<li class="d-flex justify-content-between align-items-center">
-										<span>Nepal</span>
-										<a href="#" class="price-btn">$1500</a>
-									</li>
-									<li class="d-flex justify-content-between align-items-center">
-										<span>Thiland</span>
-										<a href="#" class="price-btn">$1500</a>
-									</li>	
-									<li class="d-flex justify-content-between align-items-center">
-										<span>Singapore</span>
-										<a href="#" class="price-btn">$1500</a>
-									</li>														
-								</ul>
-							</div>
-						</div>												
-					</div>
-				</div>	
-			</section>
 			<!-- End price Area -->
 			
 
@@ -243,58 +133,45 @@
 		            <div class="row d-flex justify-content-center">
 		                <div class="menu-content pb-70 col-lg-9">
 		                    <div class="title text-center">
-		                        <h1 class="mb-10">Other issues we can help you with</h1>
+		                        <h1 class="mb-10">Fasilitas lain yang dapat membantumu</h1>
 		                        <p>We all live in an age that belongs to the young at heart. Life that is.</p>
 		                    </div>
 		                </div>
 		            </div>					
 					<div class="row">
-						<div class="col-lg-3 col-md-6">
+						<div class="col-lg-4 col-md-6">
 							<div class="single-other-issue">
 								<div class="thumb">
 									<img class="img-fluid" src="img/o1.jpg" alt="">					
 								</div>
 								<a href="#">
-									<h4>Rent a Car</h4>
+									<h4>Tranposrtasi</h4>
 								</a>
 								<p>
 									The preservation of human life is the ultimate value, a pillar of ethics and the foundation.
 								</p>
 							</div>
 						</div>
-						<div class="col-lg-3 col-md-6">
+						<div class="col-lg-4 col-md-6">
 							<div class="single-other-issue">
 								<div class="thumb">
 									<img class="img-fluid" src="img/o2.jpg" alt="">					
 								</div>
 								<a href="#">
-									<h4>Cruise Booking</h4>
+									<h4>Tour Guide</h4>
 								</a>
 								<p>
 									I was always somebody who felt quite sorry for myself, what I had not got compared.
 								</p>
 							</div>
 						</div>
-						<div class="col-lg-3 col-md-6">
-							<div class="single-other-issue">
-								<div class="thumb">
-									<img class="img-fluid" src="img/o3.jpg" alt="">					
-								</div>
-								<a href="#">
-									<h4>To Do List</h4>
-								</a>
-								<p>
-									The following article covers a topic that has recently moved to center stage–at least it seems.
-								</p>
-							</div>
-						</div>
-						<div class="col-lg-3 col-md-6">
+						<div class="col-lg-4 col-md-6">
 							<div class="single-other-issue">
 								<div class="thumb">
 									<img class="img-fluid" src="img/o4.jpg" alt="">					
 								</div>
 								<a href="#">
-									<h4>Food Features</h4>
+									<h4>Kuliner Daerah</h4>
 								</a>
 								<p>
 									There are many kinds of narratives and organizing principles. Science is driven by evidence.
@@ -308,7 +185,7 @@
 			
 
 			<!-- Start home-about Area -->
-			<section class="home-about-area">
+			<!-- <section class="home-about-area">
 				<div class="container-fluid">
 					<div class="row align-items-center justify-content-end">
 						<div class="col-lg-6 col-md-12 home-about-left">
@@ -327,7 +204,7 @@
 						</div>
 					</div>
 				</div>	
-			</section>
+			</section> -->
 			<!-- End home-about Area -->
 			
 	
