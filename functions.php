@@ -1,37 +1,37 @@
 <?php
 
-$koneksi= mysqli_connect("localhost", "root", "", "db_websitewisata");
+$koneksi = mysqli_connect("localhost", "root", "", "db_websitewisata");
 
-function registrasi($data){
+function registrasi($data)
+{
 
     global $koneksi;
 
     $email = mysqli_real_escape_string($koneksi, $data["email"]);
-    $username = mysqli_real_escape_string($koneksi, $data["username"]);
+    $username = stripslashes($data["username"]);
     $password = mysqli_real_escape_string($koneksi, $data["password"]);
     $kpassword = mysqli_real_escape_string($koneksi, $data["kpassword"]);
 
     $result = mysqli_query($koneksi, "SELECT email, username FROM user WHERE email = '$email' OR username = '$username'");
-    if(mysqli_fetch_assoc($result)){
+    if (mysqli_fetch_assoc($result)) {
         echo "<script>
                 alert('Username atau email sudah ada');
-                </script>";
+            </script>";
         return false;
     }
-    if($password !== $kpassword){
+    if ($password !== $kpassword) {
         echo "<script>
                 alert('Password dan Konfirmasi Berbeda!');
-                </script>";
+            </script>";
         return false;
     }
-    $password = password_hash($password, PASSWORD_DEFAULT);
+
+
+    // $password = password_hash($password, PASSWORD_ARGON2I);
+    $password = md5($password);
 
     $query = "INSERT INTO user VALUES ('','$email', '$username', '$password')";
-    mysqli_query($koneksi,$query);
+    mysqli_query($koneksi, $query);
 
     return mysqli_affected_rows($koneksi);
-
 }
-
-
-?>
