@@ -1,3 +1,40 @@
+<?php
+
+session_start();
+require 'functions.php';
+
+if(isset($_SESSION["masuk"])){
+    header("Location: index.php");
+    exit;
+}
+
+if(isset($_POST["masuk"])){
+
+	$email = $_POST["email"];
+	$password = $_POST["password"];
+
+	var_dump($email);
+	var_dump($password);
+
+	$query = "SELECT * FROM user WHERE email = '$email'";
+	$result = mysqli_query($koneksi,$query);
+
+	// cek email
+	if(mysqli_num_rows($result) === 1){
+		//cek pw
+		$row = mysqli_fetch_assoc($result);
+		if (password_verify($password, $row["password"])){
+			// set session
+			$_SESSION["masuk"] = true;
+			header("Location: index.php");
+			exit;
+		}
+	}
+	$error = true;
+}
+
+?>
+
 <!DOCTYPE html>
 	<html lang="zxx" class="no-js">
 	<head>
@@ -48,20 +85,24 @@
 				<div class="container">
 					<div class="row fullscreen align-items-center justify-content-center">
 						<div class="col-lg-4 col-md-4 banner-left ">
-							<form style="z-index: 1; " class="text-white">
+							<h2 class="text-center text-white mt-10 mb-30">Silahkan Login!</h2>
+							<?php if(isset($error)) : ?>
+								<p style="color:red; font-style:italic;"> Email atau Password salah!</p>
+							<?php endif; ?>
+							<form action="" method="POST" style="z-index: 1; " class="text-white">
 								<div class="mb-3">
-									<label for="email" class="form-label">Email address/Username</label>
-									<input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Masukan email atau username">
+									<label for="email" class="form-label">Alamat email</label>
+									<input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp" placeholder="Masukan email">
 								</div>
 								<div class="mb-3">
 									<label for="password" class="form-label">Password</label>
-									<input type="password" class="form-control" id="password" placeholder="Masukan password">
+									<input type="password" class="form-control" name="password" id="password" placeholder="Masukan password">
 								</div>
 								<div class="mb-3 form-check">
 									<input type="checkbox" class="form-check-input" id="exampleCheck1">
 									<label class="form-check-label" for="exampleCheck1">Check me out</label>
 								</div>
-								<button type="submit" class="btn btn-warning mt-3">Masuk</button>
+								<button type="submit" class="btn btn-warning mt-3" name="masuk">Masuk</button>
 								<div class="mb-3 mt-3">
 									<a style="color: #0dcaf0; font-weight: bold;" href="registrasi.php">Belum punya akun? Daftar</a>
 								</div>

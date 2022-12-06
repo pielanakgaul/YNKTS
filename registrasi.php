@@ -1,3 +1,21 @@
+<?php
+
+require 'functions.php';
+
+if(isset($_POST["registrasi"])){
+	if(registrasi($_POST) > 0){
+		echo "<script>
+			alert('User berhasil ditambahkan!');
+			</script>";
+		header("Location: masuk.php");
+	}else{
+		echo mysqli_error($koneksi);
+	}
+}
+
+?>
+
+
 <!DOCTYPE html>
 	<html lang="zxx" class="no-js">
 	<head>
@@ -48,24 +66,25 @@
 				<div class="container">
 					<div class="row fullscreen align-items-center justify-content-center">
                         <div class="col-lg-4 col-md-4 banner-left ">
-                            <form style="z-index: 1; " class="text-white">
+						<h2 class="text-center text-white mt-20 mb-30">Buat akun!</h2>
+                            <form action="" method="POST" style="z-index: 1; " class="text-white">
                                 <div class="mb-3">
                                     <label for="email" class="form-label">Email address</label>
-                                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Masukan email">
+                                    <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp" placeholder="Masukan email">
                                 </div>
                                 <div class="mb-3">
                                     <label for="username" class="form-label">Username</label>
-                                    <input type="text" class="form-control" id="username"placeholder="Masukan username">
+                                    <input type="text" class="form-control" name="username" id="username"placeholder="Masukan username">
                                 </div>
                                 <div class="mb-3">
                                     <label for="password" class="form-label">Password</label>
-                                    <input type="password" class="form-control" id="password" placeholder="Masukan passsword">
+                                    <input type="password" class="form-control" name="password" id="password" placeholder="Masukan passsword">
                                 </div>
                                 <div class="mb-3">
                                     <label for="konfirmasi-password" class="form-label">Konfirmasi Password</label>
-                                    <input type="password" class="form-control" id="konfirmasi-password" placeholder="Konfirmasi passsword">
+                                    <input type="password" class="form-control" name="kpassword" id="konfirmasi-password" placeholder="Konfirmasi passsword">
                                 </div>
-                                <button type="submit" class="btn btn-warning mt-3">Register</button>
+                                <button type="submit" class="btn btn-warning mt-3" name="registrasi">Register</button>
                                 <div class="mb-3 mt-3">
 									<a style="color: #0dcaf0; font-weight: bold;" href="masuk.php">Sudah punya akun? Masuk</a>
 								</div>
