@@ -26,7 +26,6 @@ function registrasi($data)
         return false;
     }
 
-
     // $password = password_hash($password, PASSWORD_ARGON2I);
     $password = md5($password);
 

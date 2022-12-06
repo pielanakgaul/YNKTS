@@ -86,7 +86,7 @@ if (isset($_POST['login'])) {
 </head>
 
 <body>
-	<header id="header">
+	<!-- <header id="header">
 		<div class="container main-menu">
 			<div class="row align-items-center justify-content-between d-flex">
 				<div id="logo">
@@ -95,7 +95,7 @@ if (isset($_POST['login'])) {
 			</div>
 		</div>
 
-	</header><!-- #header -->
+	</header>#header -->
 
 	<!-- start banner Area -->
 	<section class="banner-area relative">
