@@ -5,9 +5,9 @@ require 'functions.php';
 if(isset($_POST["registrasi"])){
 	if(registrasi($_POST) > 0){
 		echo "<script>
-			alert('User berhasil ditambahkan!');
+				alert('User berhasil ditambahkan!');
+				window.location.href='masuk.php';
 			</script>";
-		header("Location: masuk.php");
 	}else{
 		echo mysqli_error($koneksi);
 	}
@@ -70,15 +70,15 @@ if(isset($_POST["registrasi"])){
                             <form action="" method="POST" style="z-index: 1; " class="text-white">
                                 <div class="mb-3">
                                     <label for="email" class="form-label">Email address</label>
-                                    <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp" placeholder="Masukan email">
+                                    <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp" placeholder="Masukan email" required>
                                 </div>
                                 <div class="mb-3">
                                     <label for="username" class="form-label">Username</label>
-                                    <input type="text" class="form-control" name="username" id="username"placeholder="Masukan username">
+                                    <input type="text" class="form-control" name="username" id="username"placeholder="Masukan username" required>
                                 </div>
                                 <div class="mb-3">
                                     <label for="password" class="form-label">Password</label>
-                                    <input type="password" class="form-control" name="password" id="password" placeholder="Masukan passsword">
+                                    <input type="password" class="form-control" name="password" id="password" placeholder="Masukan passsword" required>
                                 </div>
                                 <div class="mb-3">
                                     <label for="konfirmasi-password" class="form-label">Konfirmasi Password</label>
