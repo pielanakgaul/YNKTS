@@ -42,6 +42,7 @@ require 'functions.php';
 	<link rel="stylesheet" href="css/animate.min.css">
 	<link rel="stylesheet" href="css/owl.carousel.css">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/arrow.css">
 </head>
 
 <body>
@@ -57,7 +58,6 @@ require 'functions.php';
 						<li><a href="wisata.php">Wisata</a></li>
 						<li><a href="about.php">Tentang</a></li>
 						<li><a href="contact.php">Kontak</a></li>
-						<li><a href="logout.php">logout</a></li>
 						<?php
 						if (!isset($_SESSION['login'])) {
 							echo "<li> <a href='masuk.php'>Masuk</a> </li>";
@@ -104,43 +104,43 @@ require 'functions.php';
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-lg-4">
-					<div class="single-destination relative">
-						<div class="thumb relative">
-							<div class="overlay overlay-bg"></div>
-							<img class="img-fluid" src="img/d1.jpg" alt="">
-						</div>
-						<div class="desc">
-							<h4>Pantai Labengki</h4>
-							<p>Lasolo, Konawe Utara</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4">
-					<div class="single-destination relative">
-						<div class="thumb relative">
-							<div class="overlay overlay-bg"></div>
-							<img class="img-fluid" src="img/d2.jpg" alt="">
-						</div>
-						<div class="desc">
-							<h4>Air Terjun Moramo</h4>
-							<p>Moramo, Konawe Selatan</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4">
-					<div class="single-destination relative">
-						<div class="thumb relative">
-							<div class="overlay overlay-bg"></div>
-							<img class="img-fluid" src="img/d3.jpg" alt="">
-						</div>
-						<div class="desc">
-							<h4>Pulau Bokori</h4>
-							<p>Toronipa, Konawe</p>
-						</div>
-					</div>
-				</div>
-			</div>
+                <div class="col-lg-4">
+                    <div class="single-destination relative">
+                        <div class="thumb relative">
+                            <div class="overlay overlay-bg"></div>
+                            <img class="img-fluid" src="img/newpict/labengki.jpg" alt="">
+                        </div>
+                        <div class="desc">
+                            <h4>Pantai Labengki</h4>
+                            <p>Lasolo, Konawe Utara</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="single-destination relative">
+                        <div class="thumb relative">
+                            <div class="overlay overlay-bg"></div>
+                            <img class="img-fluid" src="img/newpict/moramo.jpg" alt="">
+                        </div>
+                        <div class="desc">
+                            <h4>Air Terjun Moramo</h4>
+                            <p>Moramo, Konawe Selatan</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="single-destination relative">
+                        <div class="thumb relative">
+                            <div class="overlay overlay-bg"></div>
+                            <img class="img-fluid" src="img/newpict/bokori.jpg" alt="">
+                        </div>
+                        <div class="desc">
+                            <h4>Pulau Bokori</h4>
+                            <p>Toronipa, Konawe</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 		</div>
 	</section>
 	<!-- End popular-destination Area -->
@@ -148,58 +148,58 @@ require 'functions.php';
 
 	<!-- Start other-issue Area -->
 	<section class="other-issue-area section-gap">
-		<div class="container">
-			<div class="row d-flex justify-content-center">
-				<div class="menu-content pb-70 col-lg-9">
-					<div class="title text-center">
-						<h1 class="mb-10">Fasilitas lain yang dapat membantumu</h1>
-						<p>We all live in an age that belongs to the young at heart. Life that is.</p>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-4 col-md-6">
-					<div class="single-other-issue">
-						<div class="thumb">
-							<img class="img-fluid" src="img/o1.jpg" alt="">
-						</div>
-						<a href="#">
-							<h4>Tranposrtasi</h4>
-						</a>
-						<p>
-							The preservation of human life is the ultimate value, a pillar of ethics and the foundation.
-						</p>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6">
-					<div class="single-other-issue">
-						<div class="thumb">
-							<img class="img-fluid" src="img/o2.jpg" alt="">
-						</div>
-						<a href="#">
-							<h4>Tour Guide</h4>
-						</a>
-						<p>
-							I was always somebody who felt quite sorry for myself, what I had not got compared.
-						</p>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6">
-					<div class="single-other-issue">
-						<div class="thumb">
-							<img class="img-fluid" src="img/o4.jpg" alt="">
-						</div>
-						<a href="#">
-							<h4>Kuliner Daerah</h4>
-						</a>
-						<p>
-							There are many kinds of narratives and organizing principles. Science is driven by evidence.
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="menu-content pb-70 col-lg-9">
+                    <div class="title text-center">
+                        <h1 class="mb-10">Temukan Berbagai Keperluan Anda</h1>
+                        <p>We all live in an age that belongs to the young at heart. Life that is.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-other-issue">
+                        <div class="thumb">
+                            <img class="img-fluid" src="img/newpict/transportasi.jpg" alt="">
+                        </div>
+                        <a href="#">
+                            <h4>Transportasi</h4>
+                        </a>
+                        <p>
+                            The preservation of human life is the ultimate value, a pillar of ethics and the foundation.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-other-issue">
+                        <div class="thumb">
+                            <img class="img-fluid" src="img/newpict/pemandu.jpg" alt="">
+                        </div>
+                        <a href="#">
+                            <h4>Tour Guide</h4>
+                        </a>
+                        <p>
+                            I was always somebody who felt quite sorry for myself, what I had not got compared.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-other-issue">
+                        <div class="thumb">
+                            <img class="img-fluid" src="img/newpict/sinonggi.jpg" alt="">
+                        </div>
+                        <a href="#">
+                            <h4>Kuliner Daerah</h4>
+                        </a>
+                        <p>
+                            There are many kinds of narratives and organizing principles. Science is driven by evidence.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 	<!-- End other-issue Area -->
 
 
@@ -233,7 +233,7 @@ require 'functions.php';
 			<div class="row d-flex justify-content-center">
 				<div class="menu-content pb-60 col-lg-9">
 					<div class="title text-center">
-						<h1 class="mb-10">Latest from Our Blog</h1>
+						<h1 class="mb-10">Postingan Blog Kami</h1>
 						<p>With the exception of Nietzsche, no other madman has contributed so much to human sanity as has.</p>
 					</div>
 				</div>
@@ -396,6 +396,10 @@ require 'functions.php';
 			</div>
 		</div>
 	</footer>
+	<a href="#" class="scroll-to-top">
+        <i><img src="img/arrow.png" alt="" width="30"></i>
+    </a>
+    <script src="js/script.js"></script>
 	<!-- End footer Area -->
 
 	<script src="js/vendor/jquery-2.2.4.min.js"></script>

@@ -49,6 +49,7 @@ if (isset($_POST["registrasi"])) {
 	<link rel="stylesheet" href="css/animate.min.css">
 	<link rel="stylesheet" href="css/owl.carousel.css">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/arrow.css">
 </head>
 
 <body>
@@ -180,6 +181,10 @@ if (isset($_POST["registrasi"])) {
 			</div>
 		</div>
 	</footer>
+	<a href="#" class="scroll-to-top">
+        <i><img src="img/arrow.png" alt="" width="30"></i>
+    </a>
+    <script src="js/script.js"></script>
 	<!-- End footer Area -->
 
 	<script src="js/vendor/jquery-2.2.4.min.js"></script>

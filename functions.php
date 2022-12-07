@@ -12,29 +12,18 @@ function query($query){
     return $rows;
 }
 
-
 function registrasi($data)
 {
-
     global $koneksi;
 
     //daftar
     $email = strtolower(stripslashes($data["email"]));
     $username = strtolower(stripslashes($data["username"]));
   
-
     $password = mysqli_real_escape_string($koneksi, $data["password"]);
     $kpassword = mysqli_real_escape_string($koneksi, $data["kpassword"]);
     $result = mysqli_query($koneksi, "SELECT email, username FROM user WHERE email = '$email' OR username = '$username'");
-    $result1 = mysqli_query($koneksi, "SELECT email, username FROM admin WHERE email = '$email' OR username = '$username'");
     if (mysqli_fetch_assoc($result)) {
-        echo "<script>
-                alert('Username atau email sudah ada');
-            </script>";
-        return false;
-    }
-
-    if (mysqli_fetch_assoc($result1)) {
         echo "<script>
                 alert('Username atau email sudah ada');
             </script>";
@@ -56,6 +45,42 @@ function registrasi($data)
     $gambar = "";
 
     $query = "INSERT INTO user VALUES ('','$email', '$username', '$password', '$no_telp', '$kota', '$negara','$gambar')";
+    mysqli_query($koneksi, $query);
+
+    return mysqli_affected_rows($koneksi);
+}
+
+function registrasi_admin($data)
+{
+
+    global $koneksi;
+
+    //daftar
+    $email = strtolower(stripslashes($data["email"]));
+    $username = strtolower(stripslashes($data["username"]));
+  
+    $password = mysqli_real_escape_string($koneksi, $data["password"]);
+    $kpassword = mysqli_real_escape_string($koneksi, $data["kpassword"]);
+    $result1 = mysqli_query($koneksi, "SELECT email, username FROM admin WHERE email = '$email' OR username = '$username'");
+
+    if (mysqli_fetch_assoc($result1)) {
+        echo "<script>
+                alert('Username atau email sudah ada');
+            </script>";
+        return false;
+    }
+
+    if ($password !== $kpassword) {
+        echo "<script>
+                alert('Password dan Konfirmasi Berbeda!');
+            </script>";
+        return false;
+    }
+    // $password = password_hash($password, PASSWORD_ARGON2I);
+
+    $password = md5($password);
+
+    $query = "INSERT INTO admin VALUES ('','$email', '$username', '$password')";
     mysqli_query($koneksi, $query);
 
     return mysqli_affected_rows($koneksi);
@@ -108,7 +133,6 @@ function upload(){
 function update($data){
     global $koneksi;
 
-
     $id = $data["id"];
     $email = $data["email"];
     $username = $data["username"];
@@ -123,7 +147,7 @@ function update($data){
         $gambar = upload();
     }
 
-    $query = "UPDATE user SET  
+    $query = "UPDATE us  er SET  
                 email = '$email', 
                 username = '$username', 
                 no_telp = '$no_telp', 

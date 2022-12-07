@@ -3,9 +3,9 @@
 require 'functions.php';
 
 if (isset($_POST["buat"])) {
-	if (registrasi($_POST) > 0) {
+	if (registrasi_admin($_POST) > 0) {
 		echo "<script>
-				alert('User berhasil ditambahkan!');
+				alert('Admin berhasil ditambahkan!');
 				window.location.href='dashboard.php';
 			</script>";
 	} else {

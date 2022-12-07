@@ -42,6 +42,7 @@ require 'functions.php';
 	<link rel="stylesheet" href="css/animate.min.css">
 	<link rel="stylesheet" href="css/owl.carousel.css">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/arrow.css">
 </head>
 
 <body>
@@ -89,229 +90,235 @@ require 'functions.php';
 	<!-- End banner Area -->
 
 	<!-- Start destinations Area -->
-	<section class="destinations-area section-gap">
-		<div class="container">
-			<div class="row d-flex justify-content-center">
-				<div class="menu-content pb-40 col-lg-8">
-					<div class="title text-center">
-						<h1 class="mb-10">Destinasi Populer di Sulawesi Tenggara</h1>
-						<p>Destinasi populer disetiap kabupaten yang ada di Sulawesi Tenggara</p>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-4">
-					<div class="single-destinations">
-						<div class="thumb">
-							<img src="img/hotels/d1.jpg" alt="">
-						</div>
-						<div class="details">
-							<h4 class="d-flex justify-content-between">
-								<span>Hilton Star Hotel</span>
-							</h4>
-							<p>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis autem asperiores cupiditate, neque vero atque odit laudantium sint magnam impedit fugiat corrupti eum repellat at, laboriosam vitae hic, eligendi aut.
-							</p>
-							<ul class="package-list">
-								<li class="d-flex justify-content-between align-items-center mt-1 mr-auto ml-auto">
-									<span class="d-flex">
-										<svg class="mr-1" xmlns="http://www.w3.org/2000/svg" width="30" height="30" preserveAspectRatio="xMidYMid meet" viewBox="0 0 30 30">
-											<path fill="currentColor" d="M12 12q.825 0 1.413-.588Q14 10.825 14 10t-.587-1.413Q12.825 8 12 8q-.825 0-1.412.587Q10 9.175 10 10q0 .825.588 1.412Q11.175 12 12 12Zm0 10q-4.025-3.425-6.012-6.363Q4 12.7 4 10.2q0-3.75 2.413-5.975Q8.825 2 12 2t5.587 2.225Q20 6.45 20 10.2q0 2.5-1.987 5.437Q16.025 18.575 12 22Z" />
-										</svg>
-										<h6 class="d-flex mt-1">Konawe Selatan</h6>
-									</span>
-									<span class="d-flex">
-										<a href="#" class="link-secondary">Selengkapnya</a>
-									</span>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4">
-					<div class="single-destinations">
-						<div class="thumb">
-							<img src="img/hotels/d2.jpg" alt="">
-						</div>
-						<div class="details">
-							<h4 class="d-flex justify-content-between">
-								<span>Hilton Star Hotel</span>
-							</h4>
-							<p>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis autem asperiores cupiditate, neque vero atque odit laudantium sint magnam impedit fugiat corrupti eum repellat at, laboriosam vitae hic, eligendi aut.
-							</p>
-							<ul class="package-list">
-								<li class="d-flex justify-content-between align-items-center">
-									<span class="d-flex">
-										<svg class="mr-1" xmlns="http://www.w3.org/2000/svg" width="30" height="30" preserveAspectRatio="xMidYMid meet" viewBox="0 0 30 30">
-											<path fill="currentColor" d="M12 12q.825 0 1.413-.588Q14 10.825 14 10t-.587-1.413Q12.825 8 12 8q-.825 0-1.412.587Q10 9.175 10 10q0 .825.588 1.412Q11.175 12 12 12Zm0 10q-4.025-3.425-6.012-6.363Q4 12.7 4 10.2q0-3.75 2.413-5.975Q8.825 2 12 2t5.587 2.225Q20 6.45 20 10.2q0 2.5-1.987 5.437Q16.025 18.575 12 22Z" />
-										</svg>
-										<h6 class="d-flex mt-1 ">Muna Barat</h6>
-									</span>
-									<span>
-										<a href="#" class="link-secondary">Selengkapnya</a>
-									</span>
-									<!-- <a href="#" class="price-btn">$250</a> -->
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4">
-					<div class="single-destinations">
-						<div class="thumb">
-							<img src="img/hotels/d3.jpg" alt="">
-						</div>
-						<div class="details">
-							<h4 class="d-flex justify-content-between">
-								<span>Hilton Star Hotel</span>
-							</h4>
-							<p>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis autem asperiores cupiditate, neque vero atque odit laudantium sint magnam impedit fugiat corrupti eum repellat at, laboriosam vitae hic, eligendi aut.
-							</p>
-							<ul class="package-list">
-								<li class="d-flex justify-content-between align-items-center">
-									<span class="d-flex">
-										<svg class="mr-1" xmlns="http://www.w3.org/2000/svg" width="30" height="30" preserveAspectRatio="xMidYMid meet" viewBox="0 0 30 30">
-											<path fill="currentColor" d="M12 12q.825 0 1.413-.588Q14 10.825 14 10t-.587-1.413Q12.825 8 12 8q-.825 0-1.412.587Q10 9.175 10 10q0 .825.588 1.412Q11.175 12 12 12Zm0 10q-4.025-3.425-6.012-6.363Q4 12.7 4 10.2q0-3.75 2.413-5.975Q8.825 2 12 2t5.587 2.225Q20 6.45 20 10.2q0 2.5-1.987 5.437Q16.025 18.575 12 22Z" />
-										</svg>
-										<h6 class="d-flex mt-1 ">Buton Tengah</h6>
-									</span>
-									<span>
-										<a href="#" class="link-secondary">Selengkapnya</a>
-									</span>
-									<!-- <a href="#" class="price-btn">$250</a> -->
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4">
-					<div class="single-destinations">
-						<div class="thumb">
-							<img src="img/hotels/d4.jpg" alt="">
-						</div>
-						<div class="details">
-							<h4 class="d-flex justify-content-between">
-								<span>Hilton Star Hotel</span>
-							</h4>
-							<p>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio veniam quod consequuntur cum nesciunt ab, maxime officiis, sint quibusdam ipsam velit id perferendis? Aspernatur ratione cupiditate quisquam ad id inventore.
-							</p>
-							<ul class="package-list">
-								<li class="d-flex justify-content-between align-items-center">
-									<span class="d-flex">
-										<svg class="mr-1" xmlns="http://www.w3.org/2000/svg" width="30" height="30" preserveAspectRatio="xMidYMid meet" viewBox="0 0 30 30">
-											<path fill="currentColor" d="M12 12q.825 0 1.413-.588Q14 10.825 14 10t-.587-1.413Q12.825 8 12 8q-.825 0-1.412.587Q10 9.175 10 10q0 .825.588 1.412Q11.175 12 12 12Zm0 10q-4.025-3.425-6.012-6.363Q4 12.7 4 10.2q0-3.75 2.413-5.975Q8.825 2 12 2t5.587 2.225Q20 6.45 20 10.2q0 2.5-1.987 5.437Q16.025 18.575 12 22Z" />
-										</svg>
-										<h6 class="d-flex mt-1 ">Moramo</h6>
-									</span>
-									<span>
-										<a href="#" class="link-secondary">Selengkapnya</a>
-									</span>
-									<!-- <a href="#" class="price-btn">$250</a> -->
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4">
-					<div class="single-destinations">
-						<div class="thumb">
-							<img src="img/hotels/d5.jpg" alt="">
-						</div>
-						<div class="details">
-							<h4 class="d-flex justify-content-between">
-								<span>Hilton Star Hotel</span>
-							</h4>
-							<p>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis autem asperiores cupiditate, neque vero atque odit laudantium sint magnam impedit fugiat corrupti eum repellat at, laboriosam vitae hic, eligendi aut.
-							</p>
-							<ul class="package-list">
-								<li class="d-flex justify-content-between align-items-center">
-									<span class="d-flex">
-										<svg class="mr-1" xmlns="http://www.w3.org/2000/svg" width="30" height="30" preserveAspectRatio="xMidYMid meet" viewBox="0 0 30 30">
-											<path fill="currentColor" d="M12 12q.825 0 1.413-.588Q14 10.825 14 10t-.587-1.413Q12.825 8 12 8q-.825 0-1.412.587Q10 9.175 10 10q0 .825.588 1.412Q11.175 12 12 12Zm0 10q-4.025-3.425-6.012-6.363Q4 12.7 4 10.2q0-3.75 2.413-5.975Q8.825 2 12 2t5.587 2.225Q20 6.45 20 10.2q0 2.5-1.987 5.437Q16.025 18.575 12 22Z" />
-										</svg>
-										<h6 class="d-flex mt-1 ">Kendari</h6>
-									</span>
-									<span>
-										<a href="#" class="link-secondary">Selengkapnya</a>
-									</span>
-									<!-- <a href="#" class="price-btn">$250</a> -->
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4">
-					<div class="single-destinations">
-						<div class="thumb">
-							<img src="img/hotels/d6.jpg" alt="">
-						</div>
-						<div class="details">
-							<h4 class="d-flex justify-content-between">
-								<span>Hilton Star Hotel</span>
-							</h4>
-							<p>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis autem asperiores cupiditate, neque vero atque odit laudantium sint magnam impedit fugiat corrupti eum repellat at, laboriosam vitae hic, eligendi aut.
-							</p>
-							<ul class="package-list">
-								<li class="d-flex justify-content-between align-items-center">
-									<span class="d-flex">
-										<svg class="mr-1" xmlns="http://www.w3.org/2000/svg" width="30" height="30" preserveAspectRatio="xMidYMid meet" viewBox="0 0 30 30">
-											<path fill="currentColor" d="M12 12q.825 0 1.413-.588Q14 10.825 14 10t-.587-1.413Q12.825 8 12 8q-.825 0-1.412.587Q10 9.175 10 10q0 .825.588 1.412Q11.175 12 12 12Zm0 10q-4.025-3.425-6.012-6.363Q4 12.7 4 10.2q0-3.75 2.413-5.975Q8.825 2 12 2t5.587 2.225Q20 6.45 20 10.2q0 2.5-1.987 5.437Q16.025 18.575 12 22Z" />
-										</svg>
-										<h6 class="d-flex mt-1 ">Muna</h6>
-									</span>
-									<span>
-										<a href="#" class="link-secondary">Selengkapnya</a>
-									</span>
-									<!-- <a href="#" class="price-btn">$250</a> -->
-								</li>
-							</ul>
-							<!-- <ul class="package-list">
-									<li class="d-flex justify-content-between align-items-center">
-										<span>Swimming pool</span>
-										<span>Yes</span>
-									</li>
-									<li class="d-flex justify-content-between align-items-center">
-										<span>Gymnesium</span>
-										<span>No</span>
-									</li>
-									<li class="d-flex justify-content-between align-items-center">
-										<span>Wi-fi</span>
-										<span>Yes</span>
-									</li>
-									<li class="d-flex justify-content-between align-items-center">
-										<span>Room Service</span>
-										<span>No</span>
-									</li>
-									<li class="d-flex justify-content-between align-items-center">
-										<span>Air Condition</span>
-										<span>Yes</span>
-									</li>
-									<li class="d-flex justify-content-between align-items-center">
-										<span>Restaurant</span>
-										<span>Yes</span>
-									</li>												
-									<li class="d-flex justify-content-between align-items-center">
-										<span>Price per night</span>
-										<a href="#" class="price-btn">$250</a>
-									</li>													
-								</ul> -->
-						</div>
-					</div>
-				</div>
-			</div>
+    <section class="destinations-area section-gap">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="menu-content pb-40 col-lg-8">
+                    <div class="title text-center">
+                        <h1 class="mb-10">Destinasi Populer di Sulawesi Tenggara</h1>
+                        <p>Destinasi populer disetiap kabupaten yang ada di Sulawesi Tenggara</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="single-destinations">
+                        <div class="thumb">
+                            <img src="img/newpict/moramo.jpg" alt="">
+                        </div>
+                        <div class="details">
+                            <h4 class="d-flex justify-content-between">
+                                <span>Air Terjun Moramo</span>
+                            </h4>
+                            <p>
+                                Air terjun Moramo, salah satu air tejun terindah di Indonesia ini memang memiliki
+                                karakter yang unik dan beberapa keistimeawaan. Air terjun ini memilki ketinggian sekitar
+                                100 meter yang berupa air tejun berundak.
+                            </p>
+                            <ul class="package-list">
+                                <li class="d-flex justify-content-between align-items-center mt-1 mr-auto ml-auto">
+                                    <span class="d-flex">
+                                        <a href="https://goo.gl/maps/bkQojuoy6oemXiWcA" class="link-secondary"><svg
+                                                class="mr-1" xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                                preserveAspectRatio="xMidYMid meet" viewBox="0 0 30 30">
+                                                <path fill="currentColor"
+                                                    d="M12 12q.825 0 1.413-.588Q14 10.825 14 10t-.587-1.413Q12.825 8 12 8q-.825 0-1.412.587Q10 9.175 10 10q0 .825.588 1.412Q11.175 12 12 12Zm0 10q-4.025-3.425-6.012-6.363Q4 12.7 4 10.2q0-3.75 2.413-5.975Q8.825 2 12 2t5.587 2.225Q20 6.45 20 10.2q0 2.5-1.987 5.437Q16.025 18.575 12 22Z" />
+                                            </svg></a>
+                                        <h6 class="d-flex mt-1">Konawe Selatan</h6>
+                                    </span>
+                                    <span class="d-flex">
+                                        <a href="#" class="link-secondary">Selengkapnya</a>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="single-destinations">
+                        <div class="thumb">
+                            <img src="img/newpict/napabale.jpg" alt="">
+                        </div>
+                        <div class="details">
+                            <h4 class="d-flex justify-content-between">
+                                <span>Danau Napabale</span>
+                            </h4>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis autem asperiores
+                                cupiditate, neque vero atque odit laudantium sint magnam impedit fugiat corrupti eum
+                                repellat at, laboriosam vitae hic, eligendi aut.
+                            </p>
+                            <ul class="package-list">
+                                <li class="d-flex justify-content-between align-items-center">
+                                    <span class="d-flex">
+                                        <a href="https://goo.gl/maps/2mYcWaEDFXE6NU5RA" class="link-secondary"><svg
+                                                class="mr-1" xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                                preserveAspectRatio="xMidYMid meet" viewBox="0 0 30 30">
+                                                <path fill="currentColor"
+                                                    d="M12 12q.825 0 1.413-.588Q14 10.825 14 10t-.587-1.413Q12.825 8 12 8q-.825 0-1.412.587Q10 9.175 10 10q0 .825.588 1.412Q11.175 12 12 12Zm0 10q-4.025-3.425-6.012-6.363Q4 12.7 4 10.2q0-3.75 2.413-5.975Q8.825 2 12 2t5.587 2.225Q20 6.45 20 10.2q0 2.5-1.987 5.437Q16.025 18.575 12 22Z" />
+                                            </svg></a>
+                                        <h6 class="d-flex mt-1">Muna</h6>
+                                    </span>
+                                    <span>
+                                        <a href="#" class="link-secondary">Selengkapnya</a>
+                                    </span>
+                                    <!-- <a href="#" class="price-btn">$250</a> -->
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="single-destinations">
+                        <div class="thumb">
+                            <img src="img/newpict/kotaeono.jpeg" alt="">
+                        </div>
+                        <div class="details">
+                            <h4 class="d-flex justify-content-between">
+                                <span>Batu Belah Kotaeono</span>
+                            </h4>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis autem asperiores
+                                cupiditate, neque vero atque odit laudantium sint magnam impedit fugiat corrupti eum
+                                repellat at, laboriosam vitae hic, eligendi aut.
+                            </p>
+                            <ul class="package-list">
+                                <li class="d-flex justify-content-between align-items-center">
+                                    <span class="d-flex">
+                                        <a href="https://goo.gl/maps/bkQojuoy6oemXiWcA" class="link-secondary"><svg
+                                                class="mr-1" xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                                preserveAspectRatio="xMidYMid meet" viewBox="0 0 30 30">
+                                                <path fill="currentColor"
+                                                    d="M12 12q.825 0 1.413-.588Q14 10.825 14 10t-.587-1.413Q12.825 8 12 8q-.825 0-1.412.587Q10 9.175 10 10q0 .825.588 1.412Q11.175 12 12 12Zm0 10q-4.025-3.425-6.012-6.363Q4 12.7 4 10.2q0-3.75 2.413-5.975Q8.825 2 12 2t5.587 2.225Q20 6.45 20 10.2q0 2.5-1.987 5.437Q16.025 18.575 12 22Z" />
+                                            </svg></a>
+                                        <h6 class="d-flex mt-1">Buton Tengah</h6>
+                                    </span>
+                                    <span>
+                                        <a href="#" class="link-secondary">Selengkapnya</a>
+                                    </span>
+                                    <!-- <a href="#" class="price-btn">$250</a> -->
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="single-destinations">
+                            <div class="thumb">
+                                <img src="img/newpict/moramo.jpg" alt="">
+                            </div>
+                            <div class="details">
+                                <h4 class="d-flex justify-content-between">
+                                    <span>Pantai Toronipa</span>
+                                </h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis autem
+                                    asperiores
+                                    cupiditate, neque vero atque odit laudantium sint magnam impedit fugiat corrupti eum
+                                    repellat at, laboriosam vitae hic, eligendi aut.
+                                </p>
+                                <ul class="package-list">
+                                    <li class="d-flex justify-content-between align-items-center mt-1 mr-auto ml-auto">
+                                        <span class="d-flex">
+                                            <a href="https://goo.gl/maps/LZVGZdYtHTubGcY68" class="link-secondary"><svg
+                                                    class="mr-1" xmlns="http://www.w3.org/2000/svg" width="30"
+                                                    height="30" preserveAspectRatio="xMidYMid meet" viewBox="0 0 30 30">
+                                                    <path fill="currentColor"
+                                                        d="M12 12q.825 0 1.413-.588Q14 10.825 14 10t-.587-1.413Q12.825 8 12 8q-.825 0-1.412.587Q10 9.175 10 10q0 .825.588 1.412Q11.175 12 12 12Zm0 10q-4.025-3.425-6.012-6.363Q4 12.7 4 10.2q0-3.75 2.413-5.975Q8.825 2 12 2t5.587 2.225Q20 6.45 20 10.2q0 2.5-1.987 5.437Q16.025 18.575 12 22Z" />
+                                                </svg></a>
+                                            <h6 class="d-flex mt-1">Konawe</h6>
+                                        </span>
+                                        <span class="d-flex">
+                                            <a href="#" class="link-secondary">Selengkapnya</a>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="single-destinations">
+                            <div class="thumb">
+                                <img src="img/newpict/napabale.jpg" alt="">
+                            </div>
+                            <div class="details">
+                                <h4 class="d-flex justify-content-between">
+                                    <span>Danau Napabale</span>
+                                </h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis autem
+                                    asperiores
+                                    cupiditate, neque vero atque odit laudantium sint magnam impedit fugiat corrupti eum
+                                    repellat at, laboriosam vitae hic, eligendi aut.
+                                </p>
+                                <ul class="package-list">
+                                    <li class="d-flex justify-content-between align-items-center">
+                                        <span class="d-flex">
+                                            <a href="https://goo.gl/maps/2mYcWaEDFXE6NU5RA" class="link-secondary"><svg
+                                                    class="mr-1" xmlns="http://www.w3.org/2000/svg" width="30"
+                                                    height="30" preserveAspectRatio="xMidYMid meet" viewBox="0 0 30 30">
+                                                    <path fill="currentColor"
+                                                        d="M12 12q.825 0 1.413-.588Q14 10.825 14 10t-.587-1.413Q12.825 8 12 8q-.825 0-1.412.587Q10 9.175 10 10q0 .825.588 1.412Q11.175 12 12 12Zm0 10q-4.025-3.425-6.012-6.363Q4 12.7 4 10.2q0-3.75 2.413-5.975Q8.825 2 12 2t5.587 2.225Q20 6.45 20 10.2q0 2.5-1.987 5.437Q16.025 18.575 12 22Z" />
+                                                </svg></a>
+                                            <h6 class="d-flex mt-1">Muna</h6>
+                                        </span>
+                                        <span>
+                                            <a href="#" class="link-secondary">Selengkapnya</a>
+                                        </span>
+                                        <!-- <a href="#" class="price-btn">$250</a> -->
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="single-destinations">
+                            <div class="thumb">
+                                <img src="img/newpict/kotaeono.jpeg" alt="">
+                            </div>
+                            <div class="details">
+                                <h4 class="d-flex justify-content-between">
+                                    <span>Batu Belah Kotaeono</span>
+                                </h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis autem
+                                    asperiores
+                                    cupiditate, neque vero atque odit laudantium sint magnam impedit fugiat corrupti eum
+                                    repellat at, laboriosam vitae hic, eligendi aut.
+                                </p>
+                                <ul class="package-list">
+                                    <li class="d-flex justify-content-between align-items-center">
+                                        <span class="d-flex">
+                                            <a href="https://goo.gl/maps/bkQojuoy6oemXiWcA" class="link-secondary"><svg
+                                                    class="mr-1" xmlns="http://www.w3.org/2000/svg" width="30"
+                                                    height="30" preserveAspectRatio="xMidYMid meet" viewBox="0 0 30 30">
+                                                    <path fill="currentColor"
+                                                        d="M12 12q.825 0 1.413-.588Q14 10.825 14 10t-.587-1.413Q12.825 8 12 8q-.825 0-1.412.587Q10 9.175 10 10q0 .825.588 1.412Q11.175 12 12 12Zm0 10q-4.025-3.425-6.012-6.363Q4 12.7 4 10.2q0-3.75 2.413-5.975Q8.825 2 12 2t5.587 2.225Q20 6.45 20 10.2q0 2.5-1.987 5.437Q16.025 18.575 12 22Z" />
+                                                </svg></a>
+                                            <h6 class="d-flex mt-1">Buton Tengah</h6>
+                                        </span>
+                                        <span>
+                                            <a href="#" class="link-secondary">Selengkapnya</a>
+                                        </span>
+                                        <!-- <a href="#" class="price-btn">$250</a> -->
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="justify-content-center align-items-center text-center mt-5">
+                <a href="wisata2.php">
+                    <button type="button" class="btn btn-dark"
+                        style="padding: 10px; margin: auto; border-radius: 25px; font-size: 22px;">Destinasi lainnya
+					</button>
+                </a>
+            </div>
 		</div>
-		<div class="justify-content-center align-items-center text-center mt-5">
-			<a href="wisata2.php">
-				<button type="button" class="btn btn-dark" style="padding: 10px; margin: auto; border-radius: 25px; font-size: 22px;">Destinasi lainnya</button>
-			</a>
-		</div>
-	</section>
-	<!-- End destinations Area -->
+    </section>
+    <!-- End destinations Area -->
 
 
 	<!-- start footer Area -->
@@ -380,6 +387,10 @@ require 'functions.php';
 			</div>
 		</div>
 	</footer>
+	<a href="#" class="scroll-to-top">
+        <i><img src="img/arrow.png" alt="" width="30"></i>
+    </a>
+    <script src="js/script.js"></script>
 	<!-- End footer Area -->
 
 	<script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>

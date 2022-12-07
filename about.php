@@ -43,6 +43,7 @@ require 'functions.php';
 	<link rel="stylesheet" href="css/animate.min.css">
 	<link rel="stylesheet" href="css/owl.carousel.css">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/arrow.css">
 </head>
 
 <body>
@@ -74,348 +75,322 @@ require 'functions.php';
 	</header><!-- #header -->
 
 
-	<!-- start banner Area -->
-	<section class="about-banner relative">
-		<div class="overlay overlay-bg"></div>
-		<div class="container">
-			<div class="row d-flex align-items-center justify-content-center">
-				<div class="about-content col-lg-12">
-					<h1 class="text-white">
-						Tentang
-					</h1>
-					<p class="text-white link-nav"><a href="index.php">Beranda </a> <span class="lnr lnr-arrow-right"></span> <a href="about.php"> Tentang</a></p>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- End banner Area -->
-
 	<!-- Start about-info Area -->
-	<section class="about-info-area section-gap">
-		<div class="container">
-			<div class="row align-items-center">
-				<div class="col-lg-6 info-left">
-					<img class="img-fluid" src="img/about/info-img.jpg" alt="">
-				</div>
-				<div class="col-lg-6 info-right">
-					<h6>Tentang</h6>
-					<h1>Apa itu Anoa Land?</h1>
-					<p>
-						Di Anoa Land anda bisa menemukan berbagai informasi mengenai destinasi wisata di Sulawesi Tenggara.
-					</p>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- End about-info Area -->
+    <section class="about-info-area section-gap">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 info-left">
+                    <img class="img-fluid" src="img/about/info-img.jpg" alt="">
+                </div>
+                <div class="col-lg-6 info-right">
+                    <h6>Tentang</h6>
+                    <h1>Anoa Land</h1>
+                    <p>
+                        Keindahan objek wisata, kekayaan sejarah dan budaya, serta kelezatan kuliner menjadikan Sulawesi
+                        Tenggara ini selalu dirindukan siapapun yang pernah berkunjung. Tidak hanya itu, keramahan
+                        penduduk lokal serta budaya yang masih terjaga hingga kini membuat pelancong mengakui
+                        warm-hearted experience yang akan selalu dirindukan sehingga membuat pengunjung ingin selalu
+                        kembali. Nikmati perjalanan tak terlupakan anda dengan mengeksplor setiap sudut wisata di
+                        sulawesi tenggara. Di Anoa Land anda bisa menemukan berbagai informasi mengenai destinasi wisata
+                        di Sulawesi Tenggara.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End about-info Area -->
+    <!-- Start map-info Area -->
+    <section class="contact-page-area section-gap">
+        <div class="container">
+            <div class="text-center mb-4">
+                <h1>Provinsi Sulawesi Tenggara</h1>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6 info-left">
+                    <div class="map text-center">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4073091.2101302496!2d117.97581189015267!3d-4.479988140186201!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d98ecde0b6b7183%3A0x621d7c439f04a4ed!2sSulawesi%20Tenggara!5e0!3m2!1sid!2sid!4v1670379911247!5m2!1sid!2sid"
+                            width="550" height="400" style="border:0;" allowfullscreen=""
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+						</iframe>
+                    </div>
+                </div>
+                <div class="col-lg-6 info-right">
+                    <div class="mb-4">
+                        <h4>Geografi Sulawesi Tenggara</h4>
+                    </div>
+                    <p>
+                        Sulawesi Tenggara (disingkat Sultra) adalah sebuah provinsi di Indonesia yang terletak bagian
+                        tenggara pulau Sulawesi dengan ibu kota Kendari. Provinsi Sulawesi Tenggara terletak di Jazirah
+                        Tenggara Pulau Sulawesi, secara geografis terletak di bagian selatan garis khatulistiwa di
+                        antara 02°45' – 06°15' Lintang Selatan dan 120°45' – 124°30' Bujur Timur serta mempunyai wilayah
+                        daratan seluas 38.140 km² (3.814.000 ha) dan perairan (laut) seluas 110.000 km² (11.000.000 ha).
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End map-info Area -->
 
-	<!-- Start price Area -->
-	<section class="price-area section-gap">
-		<div class="container">
-			<div class="row d-flex justify-content-center">
-				<div class="menu-content pb-70 col-lg-8">
-					<div class="title text-center">
-						<h1 class="mb-10">We Provide Affordable Prices</h1>
-						<p>Well educated, intellectual people, especially scientists at all times demonstrate considerably.</p>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-4">
-					<div class="single-price">
-						<h4>Cheap Packages</h4>
-						<ul class="price-list">
-							<li class="d-flex justify-content-between align-items-center">
-								<span>New York</span>
-								<a href="#" class="price-btn">$1500</a>
-							</li>
-							<li class="d-flex justify-content-between align-items-center">
-								<span>Maldives</span>
-								<a href="#" class="price-btn">$1500</a>
-							</li>
-							<li class="d-flex justify-content-between align-items-center">
-								<span>Sri Lanka</span>
-								<a href="#" class="price-btn">$1500</a>
-							</li>
-							<li class="d-flex justify-content-between align-items-center">
-								<span>Nepal</span>
-								<a href="#" class="price-btn">$1500</a>
-							</li>
-							<li class="d-flex justify-content-between align-items-center">
-								<span>Thiland</span>
-								<a href="#" class="price-btn">$1500</a>
-							</li>
-							<li class="d-flex justify-content-between align-items-center">
-								<span>Singapore</span>
-								<a href="#" class="price-btn">$1500</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-lg-4">
-					<div class="single-price">
-						<h4>Luxury Packages</h4>
-						<ul class="price-list">
-							<li class="d-flex justify-content-between align-items-center">
-								<span>New York</span>
-								<a href="#" class="price-btn">$1500</a>
-							</li>
-							<li class="d-flex justify-content-between align-items-center">
-								<span>Maldives</span>
-								<a href="#" class="price-btn">$1500</a>
-							</li>
-							<li class="d-flex justify-content-between align-items-center">
-								<span>Sri Lanka</span>
-								<a href="#" class="price-btn">$1500</a>
-							</li>
-							<li class="d-flex justify-content-between align-items-center">
-								<span>Nepal</span>
-								<a href="#" class="price-btn">$1500</a>
-							</li>
-							<li class="d-flex justify-content-between align-items-center">
-								<span>Thiland</span>
-								<a href="#" class="price-btn">$1500</a>
-							</li>
-							<li class="d-flex justify-content-between align-items-center">
-								<span>Singapore</span>
-								<a href="#" class="price-btn">$1500</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-lg-4">
-					<div class="single-price">
-						<h4>Camping Packages</h4>
-						<ul class="price-list">
-							<li class="d-flex justify-content-between align-items-center">
-								<span>New York</span>
-								<a href="#" class="price-btn">$1500</a>
-							</li>
-							<li class="d-flex justify-content-between align-items-center">
-								<span>Maldives</span>
-								<a href="#" class="price-btn">$1500</a>
-							</li>
-							<li class="d-flex justify-content-between align-items-center">
-								<span>Sri Lanka</span>
-								<a href="#" class="price-btn">$1500</a>
-							</li>
-							<li class="d-flex justify-content-between align-items-center">
-								<span>Nepal</span>
-								<a href="#" class="price-btn">$1500</a>
-							</li>
-							<li class="d-flex justify-content-between align-items-center">
-								<span>Thiland</span>
-								<a href="#" class="price-btn">$1500</a>
-							</li>
-							<li class="d-flex justify-content-between align-items-center">
-								<span>Singapore</span>
-								<a href="#" class="price-btn">$1500</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- End price Area -->
+    <!-- Start Galerry Area -->
+    <section class="recent-blog-area section-gap">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="menu-content pb-60 col-lg-9">
+                    <div class="title text-center">
+                        <h1 class="mb-10">Galeri Wisata Sulawesi Tenggara</h1>
+                        <p>Temukan Tempat Indah yang Tersembunyi di Sulawesi Tenggara</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="active-recent-blog-carusel">
+                    <div class="single-recent-blog-post item">
+                        <div class="thumb">
+                            <img class="img-fluid" src="img/newpict/bahari.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="single-recent-blog-post item">
+                        <div class="thumb">
+                            <img class="img-fluid" src="img/newpict/toronipa.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="single-recent-blog-post item">
+                        <div class="thumb">
+                            <img class="img-fluid" src="img/newpict/bokori.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="single-recent-blog-post item">
+                        <div class="thumb">
+                            <img class="img-fluid" src="img/newpict/ahuawali.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="single-recent-blog-post item">
+                        <div class="thumb">
+                            <img class="img-fluid" src="img/newpict/labengki.jpg" alt="">
+                        </div>
 
+                    </div>
+                    <div class="single-recent-blog-post item">
+                        <div class="thumb">
+                            <img class="img-fluid" src="img/newpict/napabale.jpg" alt="">
+                        </div>
 
-	<!-- Start other-issue Area -->
-	<section class="other-issue-area section-gap">
-		<div class="container">
-			<div class="row d-flex justify-content-center">
-				<div class="menu-content pb-70 col-lg-9">
-					<div class="title text-center">
-						<h1 class="mb-10">Other issues we can help you with</h1>
-						<p>We all live in an age that belongs to the young at heart. Life that is.</p>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-3 col-md-6">
-					<div class="single-other-issue">
-						<div class="thumb">
-							<img class="img-fluid" src="img/o1.jpg" alt="">
-						</div>
-						<a href="#">
-							<h4>Rent a Car</h4>
-						</a>
-						<p>
-							The preservation of human life is the ultimate value, a pillar of ethics and the foundation.
-						</p>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6">
-					<div class="single-other-issue">
-						<div class="thumb">
-							<img class="img-fluid" src="img/o2.jpg" alt="">
-						</div>
-						<a href="#">
-							<h4>Cruise Booking</h4>
-						</a>
-						<p>
-							I was always somebody who felt quite sorry for myself, what I had not got compared.
-						</p>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6">
-					<div class="single-other-issue">
-						<div class="thumb">
-							<img class="img-fluid" src="img/o3.jpg" alt="">
-						</div>
-						<a href="#">
-							<h4>To Do List</h4>
-						</a>
-						<p>
-							The following article covers a topic that has recently moved to center stage–at least it seems.
-						</p>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6">
-					<div class="single-other-issue">
-						<div class="thumb">
-							<img class="img-fluid" src="img/o4.jpg" alt="">
-						</div>
-						<a href="#">
-							<h4>Food Features</h4>
-						</a>
-						<p>
-							There are many kinds of narratives and organizing principles. Science is driven by evidence.
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- End other-issue Area -->
+                    </div>
+                    <div class="single-recent-blog-post item">
+                        <div class="thumb">
+                            <img class="img-fluid" src="img/newpict/kotaeono.jpeg" alt="">
+                        </div>
+                    </div>
+                    <div class="single-recent-blog-post item">
+                        <div class="thumb">
+                            <img class="img-fluid" src="img/newpict/toronipa.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="single-recent-blog-post item">
+                        <div class="thumb">
+                            <img class="img-fluid" src="img/newpict/napabale.jpg" alt="">
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End recent-galerry Area -->
+
+    <!-- Start other-issue Area -->
+    <section class="other-issue-area section-gap">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="menu-content pb-70 col-lg-9">
+                    <div class="title text-center">
+                        <h1 class="mb-10">Berbagai Jenis Wisata Sulawesi Tenggara</h1>
+                        <p>Temukan Berbagai Jenis Wisata di Sulawesi Tenggara dan Nikmati Keindahan Wisata Sesuai
+                            Keinginan Anda</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="single-other-issue">
+                        <div class="thumb">
+                            <img class="img-fluid" src="img/newpict/toronipa.jpg" alt="">
+                        </div>
+                        <a href="#">
+                            <h4>Pantai</h4>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="single-other-issue">
+                        <div class="thumb">
+                            <img class="img-fluid" src="img/newpict/ahuawali.jpg" alt="">
+                        </div>
+                        <a href="#">
+                            <h4>Pegunungan</h4>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="single-other-issue">
+                        <div class="thumb">
+                            <img class="img-fluid" src="img/newpict/museum.jpg" alt="">
+                        </div>
+                        <a href="#">
+                            <h4>Budaya</h4>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="single-other-issue">
+                        <div class="thumb">
+                            <img class="img-fluid" src="img/newpict/bahari1.jpg" alt="">
+                        </div>
+                        <a href="#">
+                            <h4>Bahari</h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End other-issue Area -->
 
 
-	<!-- Start testimonial Area -->
-	<section class="testimonial-area section-gap">
-		<div class="container">
-			<div class="row d-flex justify-content-center">
-				<div class="menu-content pb-70 col-lg-8">
-					<div class="title text-center">
-						<h1 class="mb-10">Testimonial from our Clients</h1>
-						<p>The French Revolution constituted for the conscience of the dominant aristocratic class a fall from </p>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="active-testimonial">
-					<div class="single-testimonial item d-flex flex-row">
-						<div class="thumb">
-							<img class="img-fluid" src="img/elements/user1.png" alt="">
-						</div>
-						<div class="desc">
-							<p>
-								Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills, the bigger the payoff you.
-							</p>
-							<h4>Harriet Maxwell</h4>
-							<div class="star">
-								<span class="fa fa-star checked"></span>
-								<span class="fa fa-star checked"></span>
-								<span class="fa fa-star checked"></span>
-								<span class="fa fa-star checked"></span>
-								<span class="fa fa-star"></span>
-							</div>
-						</div>
-					</div>
-					<div class="single-testimonial item d-flex flex-row">
-						<div class="thumb">
-							<img class="img-fluid" src="img/elements/user2.png" alt="">
-						</div>
-						<div class="desc">
-							<p>
-								A purpose is the eternal condition for success. Every former smoker can tell you just how hard it is to stop smoking cigarettes. However.
-							</p>
-							<h4>Carolyn Craig</h4>
-							<div class="star">
-								<span class="fa fa-star checked"></span>
-								<span class="fa fa-star checked"></span>
-								<span class="fa fa-star checked"></span>
-								<span class="fa fa-star"></span>
-								<span class="fa fa-star"></span>
-							</div>
-						</div>
-					</div>
-					<div class="single-testimonial item d-flex flex-row">
-						<div class="thumb">
-							<img class="img-fluid" src="img/elements/user1.png" alt="">
-						</div>
-						<div class="desc">
-							<p>
-								Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills, the bigger the payoff you.
-							</p>
-							<h4>Harriet Maxwell</h4>
-							<div class="star">
-								<span class="fa fa-star checked"></span>
-								<span class="fa fa-star checked"></span>
-								<span class="fa fa-star checked"></span>
-								<span class="fa fa-star checked"></span>
-								<span class="fa fa-star"></span>
-							</div>
-						</div>
-					</div>
-					<div class="single-testimonial item d-flex flex-row">
-						<div class="thumb">
-							<img class="img-fluid" src="img/elements/user2.png" alt="">
-						</div>
-						<div class="desc">
-							<p>
-								A purpose is the eternal condition for success. Every former smoker can tell you just how hard it is to stop smoking cigarettes. However.
-							</p>
-							<h4>Carolyn Craig</h4>
-							<div class="star">
-								<span class="fa fa-star checked"></span>
-								<span class="fa fa-star checked"></span>
-								<span class="fa fa-star checked"></span>
-								<span class="fa fa-star"></span>
-								<span class="fa fa-star"></span>
-							</div>
-						</div>
-					</div>
-					<div class="single-testimonial item d-flex flex-row">
-						<div class="thumb">
-							<img class="img-fluid" src="img/elements/user1.png" alt="">
-						</div>
-						<div class="desc">
-							<p>
-								Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills, the bigger the payoff you.
-							</p>
-							<h4>Harriet Maxwell</h4>
-							<div class="star">
-								<span class="fa fa-star checked"></span>
-								<span class="fa fa-star checked"></span>
-								<span class="fa fa-star checked"></span>
-								<span class="fa fa-star checked"></span>
-								<span class="fa fa-star"></span>
-							</div>
-						</div>
-					</div>
-					<div class="single-testimonial item d-flex flex-row">
-						<div class="thumb">
-							<img class="img-fluid" src="img/elements/user2.png" alt="">
-						</div>
-						<div class="desc">
-							<p>
-								A purpose is the eternal condition for success. Every former smoker can tell you just how hard it is to stop smoking cigarettes. However.
-							</p>
-							<h4>Carolyn Craig</h4>
-							<div class="star">
-								<span class="fa fa-star checked"></span>
-								<span class="fa fa-star checked"></span>
-								<span class="fa fa-star checked"></span>
-								<span class="fa fa-star"></span>
-								<span class="fa fa-star"></span>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- End testimonial Area -->
+    <!-- Start testimonial Area -->
+    <section class="testimonial-area section-gap">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="menu-content pb-70 col-lg-8">
+                    <div class="title text-center">
+                        <h1 class="mb-10">Ulasan Pengguna</h1>
+                        <p>Kirimkan feedback anda untuk pengembangan yang lebih baik </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="active-testimonial">
+                    <div class="single-testimonial item d-flex flex-row">
+                        <div class="thumb">
+                            <img class="img-fluid" src="img/elements/user1.png" alt="">
+                        </div>
+                        <div class="desc">
+                            <p>
+                                Do you want to be even more successful? Learn to love learning and growth. The more
+                                effort you put into improving your skills, the bigger the payoff you.
+                            </p>
+                            <h4>Tegar</h4>
+                            <div class="star">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-testimonial item d-flex flex-row">
+                        <div class="thumb">
+                            <img class="img-fluid" src="img/elements/user2.png" alt="">
+                        </div>
+                        <div class="desc">
+                            <p>
+                                A purpose is the eternal condition for success. Every former smoker can tell you just
+                                how hard it is to stop smoking cigarettes. However.
+                            </p>
+                            <h4>Sarman</h4>
+                            <div class="star">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-testimonial item d-flex flex-row">
+                        <div class="thumb">
+                            <img class="img-fluid" src="img/elements/user1.png" alt="">
+                        </div>
+                        <div class="desc">
+                            <p>
+                                Do you want to be even more successful? Learn to love learning and growth. The more
+                                effort you put into improving your skills, the bigger the payoff you.
+                            </p>
+                            <h4>Hadijah</h4>
+                            <div class="star">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-testimonial item d-flex flex-row">
+                        <div class="thumb">
+                            <img class="img-fluid" src="img/elements/user2.png" alt="">
+                        </div>
+                        <div class="desc">
+                            <p>
+                                A purpose is the eternal condition for success. Every former smoker can tell you just
+                                how hard it is to stop smoking cigarettes. However.
+                            </p>
+                            <h4>Saputra</h4>
+                            <div class="star">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-testimonial item d-flex flex-row">
+                        <div class="thumb">
+                            <img class="img-fluid" src="img/elements/user1.png" alt="">
+                        </div>
+                        <div class="desc">
+                            <p>
+                                Do you want to be even more successful? Learn to love learning and growth. The more
+                                effort you put into improving your skills, the bigger the payoff you.
+                            </p>
+                            <h4>Nisa</h4>
+                            <div class="star">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-testimonial item d-flex flex-row">
+                        <div class="thumb">
+                            <img class="img-fluid" src="img/elements/user2.png" alt="">
+                        </div>
+                        <div class="desc">
+                            <p>
+                                A purpose is the eternal condition for success. Every former smoker can tell you just
+                                how hard it is to stop smoking cigarettes. However.
+                            </p>
+                            <h4>Chisara</h4>
+                            <div class="star">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End testimonial Area -->
 
 	<!-- start footer Area -->
 	<footer class="footer-area section-gap">
@@ -483,6 +458,10 @@ require 'functions.php';
 			</div>
 		</div>
 	</footer>
+	<a href="#" class="scroll-to-top">
+        <i><img src="img/arrow.png" alt="" width="30"></i>
+    </a>
+    <script src="js/script.js"></script>
 	<!-- End footer Area -->
 
 	<script src="js/vendor/jquery-2.2.4.min.js"></script>
