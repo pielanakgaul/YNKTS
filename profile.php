@@ -1,14 +1,42 @@
 <?php
 
 session_start();
-if (!isset($_SESSION["login"])) {
+if (!isset($_SESSION["login"]) OR !isset($_SESSION["username"])) {
 	header("Location: masuk.php");
 	exit;
 }
 
 require 'functions.php';
 
-?>
+// $email=$_SESSION['email'];
+// $id = $_SESSION['id'];
+// $datas = query("SELECT * FROM user WHERE id = $id");
+
+// $query = ("SELECT * FROM user WHERE id = '$id'");
+// $result = mysqli_query($koneksi, $query);
+// while ($row = mysqli_fetch_array($result)) {
+
+if(isset($_POST["update"])){
+
+	if(update($_POST) > 0){
+		echo "
+			<script>
+				alert('Berhasil Update Data'); 
+				window.location.href = 'index.php';
+			</script>
+		";
+	}else{
+		echo "
+			<script>
+				alert('Gagal Update Data');
+				window.location.href = 'profile.php';
+			</script>
+		";
+	}
+
+}
+
+// ?>
 
 <!DOCTYPE html>
 <html lang="zxx" class="no-js">
@@ -75,71 +103,89 @@ require 'functions.php';
 
 	<!-- Start blog Area -->
 	<section class="recent-blog-area section-gap">
-		<div class="container">
-			<div class="row gutters">
-				<div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
-					<div class="card h-100">
-						<div class="card-body">
-							<div class="account-settings">
-								<div class="user-profile">
-									<div class="user-avatar">
-										<img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="Maxwell Admin">
+		<?php
+
+		$username = $_SESSION["username"];
+		$datas = query("SELECT * FROM user WHERE username = '$username'");
+		// var_dump($username);
+		// $query = "SELECT * FROM user WHERE username = '$username'";
+		// $result = mysqli_query($koneksi, $query);
+		// while ($data = mysqli_fetch_assoc($result)) {
+		foreach ($datas as $data) :
+			// var_dump($data);
+		?>
+		<form action="" method="POST">
+			<input type="hidden" name="id" value="<?= $data['id'];?>">
+			<div class="container">
+				<div class="row gutters">
+					<div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
+						<div class="card h-100">
+							<div class="card-body">
+								<div class="account-settings">
+									<div class="user-profile">
+										<div class="user-avatar">
+											<img src="img/<?= $data["gambar"];?>" alt="Maxwell Admin">
+										</div>
+										<h5 class="user-name"><?= $data["username"];?></h5>
+										<h6 class="user-email" style="text-transform: lowercase;"><?= $data["email"];?></h6>
 									</div>
-									<h5 class="user-name">Tegar Saputra</h5>
-									<h6 class="user-email">saputrategar@gmail.com</h6>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12">
-					<div class="card h-100">
-						<div class="card-body">
-							<div class="row gutters">
-								<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-									<h6 class="mb-2 text-warning">Detail Profil</h6>
-								</div>
-								<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-									<div class="form-group">
-										<label for="fullName">Nama Lengkap</label>
-										<input type="text" class="form-control" id="fullName" placeholder="Masukan nama lengkap">
+					<div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12">
+						<div class="card h-100">
+							<div class="card-body">
+								<div class="row gutters">
+									<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+										<h6 class="mb-2 text-warning">Detail Profil</h6>
+									</div>
+									<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+										<div class="form-group">
+											<label for="fullName">Username</label>
+											<input type="text" class="form-control" name="username" id="fullName" value="<?= $data['username']; ?>">
+										</div>
+									</div>
+									<div class=" col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+										<div class="form-group">
+											<label for="eMail">Email</label>
+											<input type="email" class="form-control" name="email" id="eMail" value="<?= $data['email']; ?>" readonly>
+										</div>
+									</div>
+									<div class=" col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+										<div class="form-group">
+											<label for="phone">Nomor Telepon</label>
+											<input type="text" class="form-control" id="phone" name="notlpn" value="<?= $data['no_telp']; ?>">
+										</div>
 									</div>
 								</div>
-								<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-									<div class="form-group">
-										<label for="eMail">Email</label>
-										<input type="email" class="form-control" id="eMail" placeholder="Masukan email">
+								<div class=" row gutters">
+									<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+										<h6 class="mt-3 mb-2 text-warning">Alamat</h6>
+									</div>
+									<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+										<div class="form-group">
+											<label for="Street">Negara</label>
+											<input type="name" class="form-control" id="Street" name="negara" value="<?= $data['negara']; ?>">
+										</div>
+									</div>
+									<div class=" col-xl-12 col-lg-12 col-md-12 col-sm-12">
+										<div class="form-group">
+											<label for="ciTy">Kota</label>
+											<input type="name" class="form-control" id="ciTy" name="kota" value="<?= $data['kota']; ?>">
+										</div>
 									</div>
 								</div>
-								<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-									<div class="form-group">
-										<label for="phone">Nomor Telepon</label>
-										<input type="text" class="form-control" id="phone" placeholder="Masukan nomor telepon">
-									</div>
-								</div>
-							</div>
-							<div class="row gutters">
-								<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-									<h6 class="mt-3 mb-2 text-warning">Alamat</h6>
-								</div>
-								<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-									<div class="form-group">
-										<label for="Street">Negara</label>
-										<input type="name" class="form-control" id="Street" placeholder="Masukan asal negara">
-									</div>
-								</div>
-								<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-									<div class="form-group">
-										<label for="ciTy">Kota</label>
-										<input type="name" class="form-control" id="ciTy" placeholder="Masukan asal kota">
-									</div>
-								</div>
-							</div>
-							<div class="row gutters">
-								<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-									<div class="text-right">
-										<button type="button" id="submit" name="submit" class="btn btn-secondary">Cancel</button>
-										<button type="button" id="submit" name="submit" class="btn btn-primary">Update</button>
+								<div class=" row gutters">
+									<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+										<div class="text-left">
+											<span class="d-none d-sm-block text-warning" style="font-weight: bold;">Upload Foto Baru</span>
+											<input type="file" id="gambar" name="gambar" class="account-file-input" accept="image/png, image/jpeg, image/jpg"/>
+										</div>
+										<div class="text-right">
+											<!-- <button type="button" id="cancel" name="cancel" class="btn btn-secondary">Cancel</button> -->
+											<button type="button" id="update" name="update" class="btn btn-primary">Update</button>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -147,7 +193,11 @@ require 'functions.php';
 					</div>
 				</div>
 			</div>
-		</div>
+		</form>
+		<?php
+		endforeach;
+		// }
+		?>
 	</section>
 	<!-- End recent-blog Area -->
 
