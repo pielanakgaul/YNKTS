@@ -2,7 +2,8 @@
 
 $koneksi = mysqli_connect("localhost", "root", "", "db_websitewisata");
 
-function registrasi($data){
+function registrasi($data)
+{
 
     global $koneksi;
 
@@ -36,13 +37,92 @@ function registrasi($data){
         return false;
     }
     // $password = password_hash($password, PASSWORD_ARGON2I);
-    $password = md5($password);
 
-    $query = "INSERT INTO user VALUES ('','$email', '$username', '$password')";
+    $password = md5($password);
+    $no_telp = "";
+    $kota = "";
+    $negara = "";
+    $gambar = "";
+
+    $query = "INSERT INTO user VALUES ('','$email', '$username', '$password', '$no_telp', '$kota', '$negara','$gambar')";
     mysqli_query($koneksi, $query);
 
     return mysqli_affected_rows($koneksi);
+}
+function upload(){
+
+    $namaFile = $_FILES['gambar']['name'];
+    $ukuranFile = $_FILES['gambar']['size'];
+    $eror = $_FILES['gambar']['error'];
+    $tmpName = $_FILES['gambar']['tmp_name'];
+
+    //cek apakah tidak ada gambar yg di upload
+    if ( $eror === 4 ){
+        echo "<script>
+                alert('Pilih gambar dahulu!');
+             </script>";
+        return false;
+    }
+
+    //cek yg diupload adalah gambar saja
+    $ekstensiGambarValid = ['jpg', 'jpeg', 'png'];
+    $ekstensiGambar = explode('.',$namaFile);
+    $ekstensiGambar = strtolower(end($ekstensiGambar));
+    if(!in_array($ekstensiGambar, $ekstensiGambarValid)){
+        echo "<script>
+                alert('Yang anda upload bukan gambar!');
+             </script>";
+        return false;
+    }
+
+    // jika file besar
+    if ($ukuranFile > 2048000){
+        echo "<script>
+                alert('Ukuran gambar terlalu besar!');
+             </script>";
+        return false;
+    }
+    
+    //lolos dicek
+    //generate nama gambar baru
+    $namaFileBaru = uniqid();
+    $namaFileBaru .= '.';
+    $namaFileBaru .= $ekstensiGambar;
+    move_uploaded_file($tmpName,'img/' . $namaFileBaru);
+    return $namaFileBaru;
 
 
+}
+
+function update($data){
+    global $koneksi;
+
+
+    $id = $data["id"];
+    $email = $data["email"];
+    $username = $data["username"];
+    $no_telp = $data["no_telp"];
+    $kota = $data["kota"];
+    $negara = $data["negara"];
+    $gambarLama = $data["gambarLama"];
+
+    if($_FILES['gambar']['error'] === 4){
+        $gambar = $gambarLama;
+    }else{
+        $gambar = upload();
+    }
+
+    $query = "UPDATE user SET  
+                email = '$email', 
+                username = '$username', 
+                no_telp = '$no_telp', 
+                kota = '$kota', 
+                negara = '$negara',  
+                gambar = '$gambar'
+              WHERE id = $id";
+              
+    mysqli_query($koneksi, $query);
+
+    return mysqli_affected_rows($koneksi);
 }
 ?>
