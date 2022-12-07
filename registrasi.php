@@ -101,7 +101,7 @@ if (isset($_POST["registrasi"])) {
 							<input type="password" class="form-control" name="kpassword" id="konfirmasi-password" placeholder="Konfirmasi passsword">
 						</div>
 						<button type="submit" class="btn btn-warning mt-3" name="registrasi">Register</button>
-						<div class="mb-3 mt-3">
+						<div class="mb-20 mt-3" style="bottom: 20px; margin-bottom: 50px;">
 							<a style="color: #0dcaf0; font-weight: bold;" href="masuk.php">Sudah punya akun? Masuk</a>
 						</div>
 					</form>
