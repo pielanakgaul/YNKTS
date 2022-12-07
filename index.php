@@ -57,6 +57,7 @@ require 'functions.php';
 						<li><a href="wisata.php">Wisata</a></li>
 						<li><a href="about.php">Tentang</a></li>
 						<li><a href="contact.php">Kontak</a></li>
+						<li><a href="logout.php">logout</a></li>
 						<?php
 						if (!isset($_SESSION['login'])) {
 							echo "<li> <a href='masuk.php'>Masuk</a> </li>";

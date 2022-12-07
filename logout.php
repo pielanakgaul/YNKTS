@@ -7,3 +7,5 @@ session_destroy();
 
 
 header("Location: masuk.php");
+exit;
+?>
