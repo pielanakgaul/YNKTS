@@ -81,6 +81,18 @@ if (isset($_POST["registrasi"])) {
 							<input type="text" class="form-control" name="username" id="username" placeholder="Masukan username" required>
 						</div>
 						<div class="mb-3">
+							<label for="no_telp" class="form-label">Nomor Telepon</label>
+							<input type="text" class="form-control" name="no_telp" id="no_telp" placeholder="Masukan nomor telepon" required>
+						</div>
+						<div class="mb-3">
+							<label for="kota" class="form-label">Kota</label>
+							<input type="text" class="form-control" name="kota" id="kota" placeholder="Masukan asal kota" required>
+						</div>
+						<div class="mb-3">
+							<label for="negara" class="form-label">Negara</label>
+							<input type="text" class="form-control" name="negara" id="negara" placeholder="Masukan asal negara" required>
+						</div>
+						<div class="mb-3">
 							<label for="password" class="form-label">Password</label>
 							<input type="password" class="form-control" name="password" id="password" placeholder="Masukan passsword" required>
 						</div>

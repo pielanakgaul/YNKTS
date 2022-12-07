@@ -19,6 +19,9 @@ function registrasi($data)
     //daftar
     $email = strtolower(stripslashes($data["email"]));
     $username = strtolower(stripslashes($data["username"]));
+    $no_telp = strtolower(stripslashes($data["no_telp"]));
+    $kota = strtolower(stripslashes($data["kota"]));
+    $negara = strtolower(stripslashes($data["negara"]));
   
     $password = mysqli_real_escape_string($koneksi, $data["password"]);
     $kpassword = mysqli_real_escape_string($koneksi, $data["kpassword"]);
@@ -39,12 +42,8 @@ function registrasi($data)
     // $password = password_hash($password, PASSWORD_ARGON2I);
 
     $password = md5($password);
-    $no_telp = "";
-    $kota = "";
-    $negara = "";
-    $gambar = "";
 
-    $query = "INSERT INTO user VALUES ('','$email', '$username', '$password', '$no_telp', '$kota', '$negara','$gambar')";
+    $query = "INSERT INTO user VALUES ('','$email', '$username', '$password', '$no_telp', '$kota', '$negara','')";
     mysqli_query($koneksi, $query);
 
     return mysqli_affected_rows($koneksi);
@@ -134,12 +133,12 @@ function update($data){
     global $koneksi;
 
     $id = $data["id"];
-    $email = $data["email"];
+    // $email = $data["email"];
     $username = $data["username"];
     $no_telp = $data["no_telp"];
     $kota = $data["kota"];
     $negara = $data["negara"];
-    $gambarLama = $data["gambarLama"];
+    $gambarLama = $data["gambar"];
 
     if($_FILES['gambar']['error'] === 4){
         $gambar = $gambarLama;
@@ -147,8 +146,7 @@ function update($data){
         $gambar = upload();
     }
 
-    $query = "UPDATE us  er SET  
-                email = '$email', 
+    $query = "UPDATE user SET  
                 username = '$username', 
                 no_telp = '$no_telp', 
                 kota = '$kota', 
