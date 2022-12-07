@@ -16,14 +16,13 @@ require 'functions.php';
 // $result = mysqli_query($koneksi, $query);
 // while ($row = mysqli_fetch_array($result)) {
 
-if(isset($_POST["update"])){
-
+if(isset($_POST['update'])){
 
 	if(update($_POST) > 0){
 		echo "
 			<script>
 				alert('Berhasil Update Data'); 
-				window.location.href = 'index.php';
+				window.location.href = 'profile.php';
 			</script>
 		";
 	}else{
@@ -72,7 +71,6 @@ if(isset($_POST["update"])){
 	<link rel="stylesheet" href="css/owl.carousel.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/arrow.css">
 </head>
 
 <body>
@@ -117,7 +115,6 @@ if(isset($_POST["update"])){
 			// var_dump($data);
 		?>
 		<form action="" method="POST">
-			<!-- <input type="hidden" name="id" value="<?= $data['id'];?>"> -->
 			<div class="container">
 				<div class="row gutters">
 					<div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
@@ -182,10 +179,10 @@ if(isset($_POST["update"])){
 									<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
 										<div class="text-left">
 											<span class="d-none d-sm-block text-warning" style="font-weight: bold;">Upload Foto Baru</span>
-											<input type="file" id="gambar" name="gambar" class="account-file-input" accept="image/png, image/jpeg, image/jpg"/>
+											<input type="file" id="gambar" name="gambar" class="account-file-input"accept="image/png, image/jpeg, image/jpg"/>
 										</div>
 										<div class="text-right">
-											<!-- <button type="button" id="cancel" name="cancel" class="btn btn-secondary">Cancel</button> -->
+											<!-- <button type="button" id="" name="" class="btn btn-secondary">Cancel</button> -->
 											<button type="submit" id="update" name="update" class="btn btn-primary">Update</button>
 										</div>
 									</div>
@@ -268,10 +265,6 @@ if(isset($_POST["update"])){
 			</div>
 		</div>
 	</footer>
-	<a href="#" class="scroll-to-top">
-        <i><img src="img/arrow.png" alt="" width="30"></i>
-    </a>
-    <script src="js/script.js"></script>
 	<!-- End footer Area -->
 
 	<script src="js/vendor/jquery-2.2.4.min.js"></script>

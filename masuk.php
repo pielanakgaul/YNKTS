@@ -18,7 +18,7 @@ if (isset($_POST['login'])) {
 	if (mysqli_num_rows($result) === 1) {
 		$row = mysqli_fetch_assoc($result);
 		session_start();
-		// $_SESSION['id'] = $row['id'];
+		$_SESSION['id'] = $row['id'];
 		$_SESSION['email'] = $row['email'];
 		$_SESSION['username'] = $row['username'];
 		$_SESSION['login'] = true;

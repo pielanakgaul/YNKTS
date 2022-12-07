@@ -310,7 +310,7 @@ require 'functions.php';
                 </div>
             </div>
             <div class="justify-content-center align-items-center text-center mt-5">
-                <a href="wisata2.php">
+                <a href="#">
                     <button type="button" class="btn btn-dark"
                         style="padding: 10px; margin: auto; border-radius: 25px; font-size: 22px;">Destinasi lainnya
 					</button>
