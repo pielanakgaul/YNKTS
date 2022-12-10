@@ -158,4 +158,3 @@ function update($data){
 
     return mysqli_affected_rows($koneksi);
 }
-?>

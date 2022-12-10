@@ -122,17 +122,13 @@ if (isset($_POST['login'])) {
 							<label for="email" class="form-label">Alamat email</label>
 							<input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp" placeholder="Masukan email" required>
 						</div>
-						<!-- <div class="mb-3">
-								<label for="username" class="form-label">Username</label>
-								<input type="text" class="form-control" name="username" id="username"placeholder="Masukan username" required>
-							</div> -->
 						<div class="mb-3">
 							<label for="password" class="form-label">Password</label>
 							<input type="password" class="form-control" name="password" id="password" placeholder="Masukan password" required>
 						</div>
 						<div class="mb-3 form-check">
 							<input type="checkbox" class="form-check-input" id="exampleCheck1">
-							<label class="form-check-label" for="exampleCheck1">Check me out</label>
+							<label class="form-check-label" for="exampleCheck1">Remember me</label>
 						</div>
 						<button type="submit" class="btn btn-warning mt-3" name="login">Masuk</button>
 						<div class="mb-3 mt-3">
@@ -228,9 +224,9 @@ if (isset($_POST['login'])) {
 		</div>
 	</footer>
 	<a href="#" class="scroll-to-top">
-        <i><img src="img/arrow.png" alt="" width="30"></i>
-    </a>
-    <script src="js/script.js"></script>
+		<i><img src="img/arrow.png" alt="" width="30"></i>
+	</a>
+	<script src="js/script.js"></script>
 	<!-- End footer Area -->
 
 	<script src="js/vendor/jquery-2.2.4.min.js"></script>

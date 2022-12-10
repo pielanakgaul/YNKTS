@@ -1,7 +1,7 @@
 <?php
 
 session_start();
-if (!isset($_SESSION["login"]) OR !isset($_SESSION["username"])) {
+if (!isset($_SESSION["login"]) or !isset($_SESSION["username"])) {
 	header("Location: masuk.php");
 	exit;
 }
@@ -16,16 +16,16 @@ require 'functions.php';
 // $result = mysqli_query($koneksi, $query);
 // while ($row = mysqli_fetch_array($result)) {
 
-if(isset($_POST['update'])){
+if (isset($_POST['update'])) {
 
-	if(update($_POST) > 0){
+	if (update($_POST) > 0) {
 		echo "
 			<script>
 				alert('Berhasil Update Data'); 
 				window.location.href = 'profile.php';
 			</script>
 		";
-	}else{
+	} else {
 		echo "
 			<script>
 				alert('Gagal Update Data');
@@ -33,10 +33,10 @@ if(isset($_POST['update'])){
 			</script>
 		";
 	}
-
 }
 
-// ?>
+// 
+?>
 
 <!DOCTYPE html>
 <html lang="zxx" class="no-js">
@@ -115,76 +115,77 @@ if(isset($_POST['update'])){
 		foreach ($datas as $data) :
 			// var_dump($data);
 		?>
-		<form action="" method="POST">
-			<div class="container">
-				<div class="row gutters">
-					<div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
-						<div class="card h-100">
-							<div class="card-body">
-								<div class="account-settings">
-									<div class="user-profile">
-										<div class="user-avatar">
-											<img src="img/<?= $data["gambar"];?>" alt="Maxwell Admin">
+			<form action="" method="POST">
+				<div class="container">
+					<div class="row gutters">
+						<div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
+							<div class="card h-100">
+								<div class="card-body">
+									<div class="account-settings">
+										<div class="user-profile">
+											<div class="user-avatar">
+												<img src="img/<?= $data["gambar"]; ?>" alt="Maxwell Admin">
+											</div>
+											<h5 class="user-name"><?= $data["username"]; ?></h5>
+											<h6 class="user-email" style="text-transform: lowercase;"><?= $data["email"]; ?></h6>
 										</div>
-										<h5 class="user-name"><?= $data["username"];?></h5>
-										<h6 class="user-email" style="text-transform: lowercase;"><?= $data["email"];?></h6>
 									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12">
-						<div class="card h-100">
-							<div class="card-body">
-								<div class="row gutters">
-									<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-										<h6 class="mb-2 text-warning">Detail Profil</h6>
-									</div>
-									<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-										<div class="form-group">
-											<label for="fullName">Username</label>
-											<input type="text" class="form-control" name="username" id="fullName" value="<?= $data['username']; ?>">
+						<div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12">
+							<div class="card h-100">
+								<div class="card-body">
+									<div class="row gutters">
+										<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+											<h6 class="mb-2 text-warning">Detail Profil</h6>
+										</div>
+										<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+											<div class="form-group">
+												<label for="fullName">Username</label>
+												<input type="text" class="form-control" name="username" id="fullName" value="<?= $data['username']; ?>">
+											</div>
+										</div>
+										<div class=" col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+											<div class="form-group">
+												<label for="eMail">Email</label>
+												<input type="email" class="form-control" name="email" id="eMail" value="<?= $data['email']; ?>" readonly>
+											</div>
+										</div>
+										<div class=" col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+											<div class="form-group">
+												<label for="phone">Nomor Telepon</label>
+												<input type="text" class="form-control" id="phone" name="notlpn" value="<?= $data['no_telp']; ?>">
+											</div>
 										</div>
 									</div>
-									<div class=" col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-										<div class="form-group">
-											<label for="eMail">Email</label>
-											<input type="email" class="form-control" name="email" id="eMail" value="<?= $data['email']; ?>" readonly>
+									<div class=" row gutters">
+										<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+											<h6 class="mt-3 mb-2 text-warning">Alamat</h6>
+										</div>
+										<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+											<div class="form-group">
+												<label for="Street">Negara</label>
+												<input type="name" class="form-control" id="Street" name="negara" value="<?= $data['negara']; ?>">
+											</div>
+										</div>
+										<div class=" col-xl-12 col-lg-12 col-md-12 col-sm-12">
+											<div class="form-group">
+												<label for="ciTy">Kota</label>
+												<input type="name" class="form-control" id="ciTy" name="kota" value="<?= $data['kota']; ?>">
+											</div>
 										</div>
 									</div>
-									<div class=" col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-										<div class="form-group">
-											<label for="phone">Nomor Telepon</label>
-											<input type="text" class="form-control" id="phone" name="notlpn" value="<?= $data['no_telp']; ?>">
-										</div>
-									</div>
-								</div>
-								<div class=" row gutters">
-									<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-										<h6 class="mt-3 mb-2 text-warning">Alamat</h6>
-									</div>
-									<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-										<div class="form-group">
-											<label for="Street">Negara</label>
-											<input type="name" class="form-control" id="Street" name="negara" value="<?= $data['negara']; ?>">
-										</div>
-									</div>
-									<div class=" col-xl-12 col-lg-12 col-md-12 col-sm-12">
-										<div class="form-group">
-											<label for="ciTy">Kota</label>
-											<input type="name" class="form-control" id="ciTy" name="kota" value="<?= $data['kota']; ?>">
-										</div>
-									</div>
-								</div>
-								<div class=" row gutters">
-									<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-										<div class="text-left">
-											<span class="d-none d-sm-block text-warning" style="font-weight: bold;">Upload Foto Baru</span>
-											<input type="file" id="gambar" name="gambar" class="account-file-input"accept="image/png, image/jpeg, image/jpg"/>
-										</div>
-										<div class="text-right">
-											<!-- <button type="button" id="" name="" class="btn btn-secondary">Cancel</button> -->
-											<button type="submit" id="update" name="update" class="btn btn-primary">Update</button>
+									<div class=" row gutters">
+										<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+											<div class="text-left">
+												<span class="d-none d-sm-block text-warning" style="font-weight: bold;">Upload Foto Baru</span>
+												<input type="file" id="gambar" name="gambar" class="account-file-input" accept="image/png, image/jpeg, image/jpg" />
+											</div>
+											<div class="text-right">
+												<!-- <button type="button" id="" name="" class="btn btn-secondary">Cancel</button> -->
+												<button type="submit" id="update" name="update" class="btn btn-primary">Perbarui Data</button>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -192,8 +193,7 @@ if(isset($_POST['update'])){
 						</div>
 					</div>
 				</div>
-			</div>
-		</form>
+			</form>
 		<?php
 		endforeach;
 		// }
@@ -267,9 +267,9 @@ if(isset($_POST['update'])){
 		</div>
 	</footer>
 	<a href="#" class="scroll-to-top">
-        <i><img src="img/arrow.png" alt="" width="30"></i>
-    </a>
-    <script src="js/script.js"></script>
+		<i><img src="img/arrow.png" alt="" width="30"></i>
+	</a>
+	<script src="js/script.js"></script>
 	<!-- End footer Area -->
 
 	<script src="js/vendor/jquery-2.2.4.min.js"></script>

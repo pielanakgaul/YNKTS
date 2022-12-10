@@ -1,21 +1,19 @@
-<?php
+<!-- <?php
 
-require 'functions.php';
+		// require 'functions.php';
 
-if (isset($_POST["registrasi"])) {
-	if (registrasi($_POST) > 0) {
-		echo "<script>
-				alert('User berhasil ditambahkan!');
-				window.location.href='masuk.php';
-			</script>";
-	} else {
-		echo mysqli_error($koneksi);
-	}
-}
+		// if (isset($_POST["registrasi"])) {
+		// 	if (registrasi($_POST) > 0) {
+		// 		echo "<script>
+		// 				alert('User berhasil ditambahkan!');
+		// 				window.location.href='masuk.php';
+		// 			</script>";
+		// 	} else {
+		// 		echo mysqli_error($koneksi);
+		// 	}
+		// }
 
-?>
-
-
+		?> -->
 
 <!DOCTYPE html>
 <html lang="zxx" class="no-js">
@@ -72,31 +70,31 @@ if (isset($_POST["registrasi"])) {
 				<div class="col-lg-4 col-md-4 banner-left ">
 					<h2 class="text-center text-white mt-20 mb-30">Buat akun!</h2>
 					<form action="" method="POST" style="z-index: 1; " class="text-white">
-						<div class="mb-3">
+						<div class="mb-1">
 							<label for="email" class="form-label">Email address</label>
 							<input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp" placeholder="Masukan email" required>
 						</div>
-						<div class="mb-3">
+						<div class="mb-1">
 							<label for="username" class="form-label">Username</label>
 							<input type="text" class="form-control" name="username" id="username" placeholder="Masukan username" required>
 						</div>
-						<div class="mb-3">
+						<div class="mb-1">
 							<label for="no_telp" class="form-label">Nomor Telepon</label>
 							<input type="text" class="form-control" name="no_telp" id="no_telp" placeholder="Masukan nomor telepon" required>
 						</div>
-						<div class="mb-3">
+						<div class="mb-1">
 							<label for="kota" class="form-label">Kota</label>
 							<input type="text" class="form-control" name="kota" id="kota" placeholder="Masukan asal kota" required>
 						</div>
-						<div class="mb-3">
+						<div class="mb-1">
 							<label for="negara" class="form-label">Negara</label>
 							<input type="text" class="form-control" name="negara" id="negara" placeholder="Masukan asal negara" required>
 						</div>
-						<div class="mb-3">
+						<div class="mb-1">
 							<label for="password" class="form-label">Password</label>
 							<input type="password" class="form-control" name="password" id="password" placeholder="Masukan passsword" required>
 						</div>
-						<div class="mb-3">
+						<div class="mb-1">
 							<label for="konfirmasi-password" class="form-label">Konfirmasi Password</label>
 							<input type="password" class="form-control" name="kpassword" id="konfirmasi-password" placeholder="Konfirmasi passsword">
 						</div>
@@ -194,9 +192,9 @@ if (isset($_POST["registrasi"])) {
 		</div>
 	</footer>
 	<a href="#" class="scroll-to-top">
-        <i><img src="img/arrow.png" alt="" width="30"></i>
-    </a>
-    <script src="js/script.js"></script>
+		<i><img src="img/arrow.png" alt="" width="30"></i>
+	</a>
+	<script src="js/script.js"></script>
 	<!-- End footer Area -->
 
 	<script src="js/vendor/jquery-2.2.4.min.js"></script>
