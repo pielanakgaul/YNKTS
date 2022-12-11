@@ -8,7 +8,7 @@ if (!isset($_SESSION["login"])) {
 
 require 'functions.php';
 
-$datas = query("SELECT * FROM wisata WHERE kategori LIKE '%pantai%'");
+$datas = query("SELECT * FROM wisata WHERE kategori LIKE '%religi%'");
 
 if (isset($_POST["cari"])) {
     $datas = cari($_POST["keyword"]);
@@ -86,12 +86,8 @@ if (isset($_POST["cari"])) {
             <div class="row d-flex align-items-center justify-content-center">
                 <div class="about-content col-lg-12">
                     <h1 class="text-white">
-                        Wisata Pantai
+                        Wisata Religi
                     </h1>
-                    <form action="" method="post" class="">
-                        <input class="form me-2" type="search" placeholder="Cari" aria-label="Search" name="keyword" size="40">
-                        <button class="btn btn-warning btn-sm" type="submit" name="cari">Search</button>
-                    </form>
                     <p class="text-white link-nav"><a href="index.php">Beranda </a> <span class="lnr lnr-arrow-right"></span> <a href="wisata.php"> Wisata Selengkapnya</a></p>
                 </div>
             </div>
@@ -105,8 +101,8 @@ if (isset($_POST["cari"])) {
             <div class="row d-flex justify-content-center">
                 <div class="menu-content pb-40 col-lg-8">
                     <div class="title text-center">
-                        <h1 class="mb-10">Destinasi Pantai di Sulawesi Tenggara</h1>
-                        <p>Destinasi pantai populer disetiap kabupaten yang ada di Sulawesi Tenggara</p>
+                        <h1 class="mb-10">Destinasi Religi di Sulawesi Tenggara</h1>
+                        <p>Destinasi religi populer disetiap kabupaten yang ada di Sulawesi Tenggara</p>
                     </div>
                 </div>
             </div>

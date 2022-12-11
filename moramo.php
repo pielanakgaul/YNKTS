@@ -9,8 +9,6 @@ if (!isset($_SESSION["login"])) {
 require 'functions.php';
 
 ?>
-
-
 <!DOCTYPE html>
 <html lang="zxx" class="no-js">
 
@@ -28,8 +26,9 @@ require 'functions.php';
     <!-- meta character set -->
     <meta charset="UTF-8">
     <!-- Site Title -->
-    <title>Tentang</title>
+    <title>Wisata</title>
 
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
     <!--
 		CSS
@@ -56,8 +55,8 @@ require 'functions.php';
                 <nav id="nav-menu-container">
                     <ul class="nav-menu">
                         <li><a href="index.php">Beranda</a></li>
-                        <li><a href="wisata.php">Wisata</a></li>
-                        <li><a href="about.php" class="active text-warning">Tentang</a></li>
+                        <li><a href="wisata.php" class="active text-warning">Wisata</a></li>
+                        <li><a href="about.php">Tentang</a></li>
                         <li><a href="contact.php">Kontak</a></li>
                         <?php
                         if (!isset($_SESSION['login'])) {
@@ -74,7 +73,6 @@ require 'functions.php';
         </div>
     </header><!-- #header -->
 
-
     <!-- start banner Area -->
     <section class="about-banner relative">
         <div class="overlay overlay-bg"></div>
@@ -82,193 +80,148 @@ require 'functions.php';
             <div class="row d-flex align-items-center justify-content-center">
                 <div class="about-content col-lg-12">
                     <h1 class="text-white">
-                        Tentang
+                        Air Terjun Moramo
                     </h1>
-                    <p class="text-white link-nav"><a href="index.php">Beranda </a> <span class="lnr lnr-arrow-right"></span> <a href="about.php"> Tentang</a></p>
+                    <p class="text-white link-nav"><a href="index.php">Beranda </a> <span class="lnr lnr-arrow-right"></span> <a href="wisata.php"> Wisata Selengkapnya</a></p>
                 </div>
             </div>
         </div>
     </section>
     <!-- End banner Area -->
 
-    <!-- Start about-info Area -->
-    <section class="about-info-area section-gap">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 info-left">
-                    <img class="img-fluid" src="img/newpict/Anoa_warna.png" alt="">
+
+    <!-- Start blog Area -->
+
+    <?php
+
+    $username = $_SESSION["username"];
+    $datas = query("SELECT * FROM user WHERE username = '$username'");
+    // var_dump($username);
+    // $query = "SELECT * FROM user WHERE username = '$username'";
+    // $result = mysqli_query($koneksi, $query);
+    // while ($data = mysqli_fetch_assoc($result)) {
+    foreach ($datas as $data) :
+        // var_dump($data);
+    ?>
+        <!-- Start map-info Area -->
+        <section class="contact-page-area section-gap">
+            <div class="container">
+                <div class="text-center mb-4">
+                    <h1>Tentang Air Terjun Moramo</h1>
                 </div>
-                <div class="col-lg-6 info-right">
-                    <h6>Tentang</h6>
-                    <h1>Anoa Land</h1>
-                    <p>
-                        Keindahan objek wisata, kekayaan sejarah dan budaya, serta kelezatan kuliner menjadikan Sulawesi
-                        Tenggara ini selalu dirindukan siapapun yang pernah berkunjung. Tidak hanya itu, keramahan
-                        penduduk lokal serta budaya yang masih terjaga hingga kini membuat pelancong mengakui
-                        warm-hearted experience yang akan selalu dirindukan sehingga membuat pengunjung ingin selalu
-                        kembali. Nikmati perjalanan tak terlupakan anda dengan mengeksplor setiap sudut wisata di
-                        sulawesi tenggara. Di Anoa Land anda bisa menemukan berbagai informasi mengenai destinasi wisata
-                        di Sulawesi Tenggara.
-                    </p>
+                <div class="row align-items-center">
+                    <div class="col-lg-6 info-left">
+                        <div class="map text-center">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1018943.3164558038!2d121.64009421898753!3d-3.96941372423956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d989f0cda33990b%3A0xab7ce4a2c20de727!2sAir%20Terjun%20Moramo!5e0!3m2!1sid!2sid!4v1670731458788!5m2!1sid!2sid" width="400" height="280" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 info-right">
+                        <div class="mb-4">
+                            <!-- <h4>Geografi Sulawesi Tenggara</h4> -->
+                        </div>
+                        <p>
+                            Air terjun moramo diresmikan oleh mentri pariwisata dan telekomikasi bapak SOSILO SUDARMAN pada
+                            tanggal 29 desember 1989. konon kabarnya air terjun moramo ini tempat mandinya para bidadari
+                            menurut penduduk setempat.</p>
+                        <p>
+                            Jam Operasional : 08:00 - 16:00
+                        </p>
+                        <p>
+                            Harga Tiket : Rp 8.000
+                        </p>
+                        <p>
+                            Fasilitas : Kamar Mandi/Ganti, Mushala
+                        </p>
+                        <p>
+                            Lokasi :
+                            Desa wisata Sumbersari terletak di Kec. Moramo Kab. Konawe Selatan.
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
+        <!-- End map-info Area -->
+        <!-- Start Galerry Area -->
+        <section class="recent-blog-area section-gap">
+            <div class="container">
+                <div class="row d-flex justify-content-center">
+                    <div class="menu-content pb-60 col-lg-9">
+                        <div class="title text-center">
+                            <h1 class="mb-10">Galeri Air Terjun Moramo</h1>
+                            <p>Temukan Tempat Indah yang Tersembunyi di Sulawesi Tenggara</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="active-recent-blog-carusel">
+                        <div class="single-recent-blog-post item">
+                            <div class="thumb">
+                                <img class="img-fluid" src="img/newpict/moramo.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="single-recent-blog-post item">
+                            <div class="thumb">
+                                <img class="img-fluid" src="img/newpict/moramo.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="single-recent-blog-post item">
+                            <div class="thumb">
+                                <img class="img-fluid" src="img/newpict/moramo.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="single-recent-blog-post item">
+                            <div class="thumb">
+                                <img class="img-fluid" src="img/newpict/moramo.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="single-recent-blog-post item">
+                            <div class="thumb">
+                                <img class="img-fluid" src="img/newpict/moramo.jpg" alt="">
+                            </div>
+
+                        </div>
+                        <div class="single-recent-blog-post item">
+                            <div class="thumb">
+                                <img class="img-fluid" src="img/newpict/moramo.jpg" alt="">
+                            </div>
+
+                        </div>
+                        <div class="single-recent-blog-post item">
+                            <div class="thumb">
+                                <img class="img-fluid" src="img/newpict/moramo.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="single-recent-blog-post item">
+                            <div class="thumb">
+                                <img class="img-fluid" src="img/newpict/moramo.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="single-recent-blog-post item">
+                            <div class="thumb">
+                                <img class="img-fluid" src="img/newpict/moramo.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="single-recent-blog-post item">
+                            <div class="thumb">
+                                <img class="img-fluid" src="img/newpict/moramo.jpg" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End recent-galerry Area -->
+
+
+
+    <?php
+    endforeach;
+    // }
+    ?>
     </section>
-    <!-- End about-info Area -->
-    <!-- Start map-info Area -->
-    <section class="contact-page-area section-gap">
-        <div class="container">
-            <div class="text-center mb-4">
-                <h1>Provinsi Sulawesi Tenggara</h1>
-            </div>
-            <div class="row align-items-center">
-                <div class="col-lg-6 info-left">
-                    <div class="map text-center">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4073091.2101302496!2d117.97581189015267!3d-4.479988140186201!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d98ecde0b6b7183%3A0x621d7c439f04a4ed!2sSulawesi%20Tenggara!5e0!3m2!1sid!2sid!4v1670379911247!5m2!1sid!2sid" width="550" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                </div>
-                <div class="col-lg-6 info-right">
-                    <div class="mb-4">
-                        <h4>Geografi Sulawesi Tenggara</h4>
-                    </div>
-                    <p>
-                        Sulawesi Tenggara (disingkat Sultra) adalah sebuah provinsi di Indonesia yang terletak bagian
-                        tenggara pulau Sulawesi dengan ibu kota Kendari. Provinsi Sulawesi Tenggara terletak di Jazirah
-                        Tenggara Pulau Sulawesi, secara geografis terletak di bagian selatan garis khatulistiwa di
-                        antara 02°45' – 06°15' Lintang Selatan dan 120°45' – 124°30' Bujur Timur serta mempunyai wilayah
-                        daratan seluas 38.140 km² (3.814.000 ha) dan perairan (laut) seluas 110.000 km² (11.000.000 ha).
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End map-info Area -->
+    <!-- End recent-blog Area -->
 
-    <!-- Start Galerry Area -->
-    <section class="recent-blog-area section-gap">
-        <div class="container">
-            <div class="row d-flex justify-content-center">
-                <div class="menu-content pb-60 col-lg-9">
-                    <div class="title text-center">
-                        <h1 class="mb-10">Galeri Wisata Sulawesi Tenggara</h1>
-                        <p>Temukan Tempat Indah yang Tersembunyi di Sulawesi Tenggara</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="active-recent-blog-carusel">
-                    <div class="single-recent-blog-post item">
-                        <div class="thumb">
-                            <img class="img-fluid" src="img/newpict/bahari.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="single-recent-blog-post item">
-                        <div class="thumb">
-                            <img class="img-fluid" src="img/newpict/toronipa.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="single-recent-blog-post item">
-                        <div class="thumb">
-                            <img class="img-fluid" src="img/newpict/bokori.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="single-recent-blog-post item">
-                        <div class="thumb">
-                            <img class="img-fluid" src="img/newpict/ahuawali.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="single-recent-blog-post item">
-                        <div class="thumb">
-                            <img class="img-fluid" src="img/newpict/labengki.jpg" alt="">
-                        </div>
-
-                    </div>
-                    <div class="single-recent-blog-post item">
-                        <div class="thumb">
-                            <img class="img-fluid" src="img/newpict/napabale.jpg" alt="">
-                        </div>
-
-                    </div>
-                    <div class="single-recent-blog-post item">
-                        <div class="thumb">
-                            <img class="img-fluid" src="img/newpict/kotaeono.jpeg" alt="">
-                        </div>
-                    </div>
-                    <div class="single-recent-blog-post item">
-                        <div class="thumb">
-                            <img class="img-fluid" src="img/newpict/toronipa.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="single-recent-blog-post item">
-                        <div class="thumb">
-                            <img class="img-fluid" src="img/newpict/napabale.jpg" alt="">
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End recent-galerry Area -->
-
-    <!-- Start other-issue Area -->
-    <section class="other-issue-area section-gap">
-        <div class="container">
-            <div class="row d-flex justify-content-center">
-                <div class="menu-content pb-70 col-lg-9">
-                    <div class="title text-center">
-                        <h1 class="mb-10">Berbagai Jenis Wisata Sulawesi Tenggara</h1>
-                        <p>Temukan Berbagai Jenis Wisata di Sulawesi Tenggara dan Nikmati Keindahan Wisata Sesuai
-                            Keinginan Anda</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-3 col-md-6">
-                    <div class="single-other-issue">
-                        <div class="thumb">
-                            <img class="img-fluid" src="img/newpict/toronipa.jpg" alt="">
-                        </div>
-                        <a href="pantai.php">
-                            <h4>Pantai</h4>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="single-other-issue">
-                        <div class="thumb">
-                            <img class="img-fluid" src="img/newpict/ahuawali.jpg" alt="">
-                        </div>
-                        <a href="pegunungan.php">
-                            <h4>Pegunungan</h4>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="single-other-issue">
-                        <div class="thumb">
-                            <img class="img-fluid" src="img/newpict/museum.jpg" alt="">
-                        </div>
-                        <a href="budaya.php">
-                            <h4>Budaya</h4>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="single-other-issue">
-                        <div class="thumb">
-                            <img class="img-fluid" src="img/newpict/religi.jpg" alt="">
-                        </div>
-                        <a href="religi.php">
-                            <h4>Religi</h4>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End other-issue Area -->
 
 
     <!-- Start testimonial Area -->
@@ -277,8 +230,8 @@ require 'functions.php';
             <div class="row d-flex justify-content-center">
                 <div class="menu-content pb-70 col-lg-8">
                     <div class="title text-center">
-                        <h1 class="mb-10">Ulasan Pengguna</h1>
-                        <p>Kirimkan feedback anda untuk pengembangan yang lebih baik </p>
+                        <h1 class="mb-10">Rating Wisata</h1>
+                        <p>Beri Bintang untuk nilai wisata anda</p>
                     </div>
                 </div>
             </div>
@@ -309,7 +262,8 @@ require 'functions.php';
                         </div>
                         <div class="desc">
                             <p>
-                                A purpose is the eternal condition for success. Every former smoker can tell you just
+                                A purpose is the eternal condition for success. Every former smoker can tell you
+                                just
                                 how hard it is to stop smoking cigarettes. However.
                             </p>
                             <h4>Sarman</h4>
@@ -347,7 +301,8 @@ require 'functions.php';
                         </div>
                         <div class="desc">
                             <p>
-                                A purpose is the eternal condition for success. Every former smoker can tell you just
+                                A purpose is the eternal condition for success. Every former smoker can tell you
+                                just
                                 how hard it is to stop smoking cigarettes. However.
                             </p>
                             <h4>Saputra</h4>
@@ -385,7 +340,8 @@ require 'functions.php';
                         </div>
                         <div class="desc">
                             <p>
-                                A purpose is the eternal condition for success. Every former smoker can tell you just
+                                A purpose is the eternal condition for success. Every former smoker can tell you
+                                just
                                 how hard it is to stop smoking cigarettes. However.
                             </p>
                             <h4>Chisara</h4>
@@ -414,7 +370,8 @@ require 'functions.php';
                         <h6>About Agency</h6>
                         <p>
                             The world has become so fast paced that people don’t want to stand by reading a page of
-                            information, they would much rather look at a presentation and understand the message. It
+                            information, they would much rather look at a presentation and understand the message.
+                            It
                             has come to a point
                         </p>
                     </div>

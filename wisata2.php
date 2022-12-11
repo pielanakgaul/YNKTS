@@ -10,6 +10,10 @@ require 'functions.php';
 
 $datas = query("SELECT * FROM wisata");
 
+if (isset($_POST["cari"])) {
+	$datas = cari($_POST["keyword"]);
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -84,6 +88,10 @@ $datas = query("SELECT * FROM wisata");
 					<h1 class="text-white">
 						Wisata
 					</h1>
+					<form action="" method="post" class="">
+						<input class="form me-2" type="search" placeholder="Cari" aria-label="Search" name="keyword" size="40">
+						<button class="btn btn-warning btn-sm" type="submit" name="cari">Search</button>
+					</form>
 					<p class="text-white link-nav"><a href="index.php">Beranda </a> <span class="lnr lnr-arrow-right"></span> <a href="wisata.php"> Wisata Selengkapnya</a></p>
 				</div>
 			</div>

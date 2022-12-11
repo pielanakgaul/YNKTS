@@ -8,6 +8,12 @@ if (!isset($_SESSION["login"])) {
 
 require 'functions.php';
 
+
+if (isset($_POST["cari"])) {
+    $datas = cari($_POST["keyword"]);
+}
+
+
 ?>
 <!DOCTYPE html>
 <html lang="zxx" class="no-js">
@@ -82,6 +88,10 @@ require 'functions.php';
                     <h1 class="text-white">
                         Wisata
                     </h1>
+                    <!-- <form action="" method="post" class="">
+                        <input class="form me-2" type="search" placeholder="Cari" aria-label="Search" name="keyword" size="40">
+                        <button class="btn btn-warning btn-sm" type="submit" name="cari">Search</button>
+                    </form> -->
                     <p class="text-white link-nav"><a href="index.php">Beranda </a> <span class="lnr lnr-arrow-right"></span> <a href="wisata.php"> Wisata Selengkapnya</a></p>
                 </div>
             </div>
@@ -124,7 +134,7 @@ require 'functions.php';
                                         <h6 class="d-flex mt-1">Konawe Selatan</h6>
                                     </span>
                                     <span class="d-flex">
-                                        <a href="#" class="link-secondary">Selengkapnya</a>
+                                        <a href="moramo.php" class="link-secondary">Selengkapnya</a>
                                     </span>
                                 </li>
                             </ul>
