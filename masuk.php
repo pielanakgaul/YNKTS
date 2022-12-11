@@ -2,6 +2,22 @@
 
 require "functions.php";
 
+if (isset($_COOKIE['id']) && isset($_COOKIE['key'])) {
+	$id = $_COOKIE['id'];
+	$key = $_COOKIE['key'];
+
+	// ambil username berdasarkan id
+	$query = "SELECT username FROM user WHERE id = $id";
+	$result = mysqli_query($koneksi, $query);
+	$row = mysqli_fetch_assoc($result);
+
+	//cek cookie dan username
+	if ($key === hash('sha256', $row['username'])) {
+		$_SESSION['login'] = true;
+	}
+}
+
+
 if (isset($_SESSION['login'])) {
 	header('Location: index.php');
 	exit;
@@ -22,6 +38,12 @@ if (isset($_POST['login'])) {
 		$_SESSION['email'] = $row['email'];
 		$_SESSION['username'] = $row['username'];
 		$_SESSION['login'] = true;
+		if (isset($_POST['remember'])) {
+			//buat cookie
+			setcookie('id', $row['id'], time() + 60);
+			setcookie('key', hash('sha256', $row['username']), time() + 60);
+			// setcookie('login','true',time() + 60);
+		}
 		header("Location: index.php");
 		exit;
 	} else {
@@ -127,8 +149,8 @@ if (isset($_POST['login'])) {
 							<input type="password" class="form-control" name="password" id="password" placeholder="Masukan password" required>
 						</div>
 						<div class="mb-3 form-check">
-							<input type="checkbox" class="form-check-input" id="exampleCheck1">
-							<label class="form-check-label" for="exampleCheck1">Remember me</label>
+							<input type="checkbox" class="form-check-input" id="remember" name="remember">
+							<label class="form-check-label" for="remember">Remember me</label>
 						</div>
 						<button type="submit" class="btn btn-warning mt-3" name="login">Masuk</button>
 						<div class="mb-3 mt-3">
@@ -172,23 +194,6 @@ if (isset($_POST['login'])) {
 						</div>
 					</div>
 				</div>
-				<!-- <div class="col-lg-4  col-md-6 col-sm-6">
-						<div class="single-footer-widget">
-							<h6>Newsletter</h6>
-							<p>
-								For business professionals caught between high OEM price and mediocre print and graphic output.									
-							</p>								
-							<div id="mc_embed_signup">
-								<form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="subscription relative">
-									<div class="input-group d-flex flex-row">
-										<input name="EMAIL" placeholder="Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address '" required="" type="email">
-										<button class="btn bb-btn"><span class="lnr lnr-location"></span></button>		
-									</div>									
-									<div class="mt-10 info"></div>
-								</form>
-							</div>
-						</div>
-					</div> -->
 				<div class="col-lg-4  col-md-6 col-sm-6">
 					<div class="single-footer-widget mail-chimp">
 						<h6 class="mb-20">InstaFeed</h6>

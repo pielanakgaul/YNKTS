@@ -8,6 +8,8 @@ if (!isset($_SESSION["login"])) {
 
 require 'functions.php';
 
+$datas = query("SELECT * FROM wisata");
+
 ?>
 
 <!DOCTYPE html>
@@ -42,6 +44,7 @@ require 'functions.php';
 	<link rel="stylesheet" href="css/animate.min.css">
 	<link rel="stylesheet" href="css/owl.carousel.css">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/arrow.css">
 </head>
 
 <body>
@@ -57,7 +60,15 @@ require 'functions.php';
 						<li><a href="wisata.php">Wisata</a></li>
 						<li><a href="about.php">Tentang</a></li>
 						<li><a href="contact.php">Kontak</a></li>
-						<li><a href="masuk.php">Masuk</a></li>
+						<?php
+						if (!isset($_SESSION['login'])) {
+							echo "<li> <a href='masuk.php'>Masuk</a> </li>";
+						}
+						if (isset($_SESSION['login'])) {
+							echo "<li> <a href='profile.php'>Profile</a> </li>
+								 <li> <a href='logout.php'>Keluar</a> </li>";
+						}
+						?>
 					</ul>
 				</nav><!-- #nav-menu-container -->
 			</div>
@@ -91,90 +102,37 @@ require 'functions.php';
 					</div>
 				</div>
 			</div>
-			<div class="card mb-3">
-				<div class="row g-0">
-					<div class="col-md-4">
-						<img src="img/hotels/d2.jpg" class="img-fluid rounded-start" alt="...">
-					</div>
-					<div class="col-md-8">
-						<div class="card-body">
-							<h5 class="card-title">Card title</h5>
-							<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-							<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+			<?php
+
+			$no = 1;
+			foreach ($datas as $data) :
+
+			?>
+				<div class="card mb-5">
+					<div class="row g-0">
+						<div class="col-md-4">
+							<img src="img/newpict/<?= $data['gambar']; ?>" class="img-fluid rounded-start" alt="...">
+						</div>
+						<div class="col-md-8">
+							<div class="card-body">
+								<h5 class="card-title justify-content-space-between"><?= $no; ?>. <?= $data['nama']; ?></h5>
+								<p class="card-text text-dark">Kategori : <?= $data['kategori']; ?></p>
+								<p class="card-text">Jam operasional : <?= $data['waktu_operasional']; ?></p>
+								<p class="card-text">Fasilitas : <?= $data['fasilitas']; ?></p>
+								<p class="card-text">No Telepon : <?= $data['no_telepon']; ?></p>
+								<p class="card-text">Tiket : <?= $data['tiket']; ?></p>
+								<!-- <div class="card-footer">
+									<small class="text-muted">Lokasi : <?= $data['lokasi']; ?></small>
+								</div> -->
+								<p class="card-text text-start"><small class="text-muted fs-2">Lokasi : <?= $data['lokasi']; ?></small></p>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="card mb-3">
-				<div class="row g-0">
-					<div class="col-md-4">
-						<img src="img/hotels/d2.jpg" class="img-fluid rounded-start" alt="...">
-					</div>
-					<div class="col-md-8">
-						<div class="card-body">
-							<h5 class="card-title">Card title</h5>
-							<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-							<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="card mb-3">
-				<div class="row g-0">
-					<div class="col-md-4">
-						<img src="img/hotels/d2.jpg" class="img-fluid rounded-start" alt="...">
-					</div>
-					<div class="col-md-8">
-						<div class="card-body">
-							<h5 class="card-title">Card title</h5>
-							<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-							<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="card mb-3">
-				<div class="row g-0">
-					<div class="col-md-4">
-						<img src="img/hotels/d2.jpg" class="img-fluid rounded-start" alt="...">
-					</div>
-					<div class="col-md-8">
-						<div class="card-body">
-							<h5 class="card-title">Card title</h5>
-							<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-							<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="card mb-3">
-				<div class="row g-0">
-					<div class="col-md-4">
-						<img src="img/hotels/d2.jpg" class="img-fluid rounded-start" alt="...">
-					</div>
-					<div class="col-md-8">
-						<div class="card-body">
-							<h5 class="card-title">Card title</h5>
-							<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-							<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="card mb-3">
-				<div class="row g-0">
-					<div class="col-md-4">
-						<img src="img/d3.jpg" class="img-fluid rounded-start" alt="...">
-					</div>
-					<div class="col-md-8">
-						<div class="card-body">
-							<h5 class="card-title">Card title</h5>
-							<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-							<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-						</div>
-					</div>
-				</div>
-			</div>
+			<?php
+				$no++;
+			endforeach;
+			?>
 		</div>
 	</section>
 	<!-- End destinations Area -->
@@ -246,6 +204,10 @@ require 'functions.php';
 			</div>
 		</div>
 	</footer>
+	<a href="#" class="scroll-to-top">
+		<i><img src="img/arrow.png" alt="" width="30"></i>
+	</a>
+	<script src="js/script.js"></script>
 	<!-- End footer Area -->
 
 	<script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>

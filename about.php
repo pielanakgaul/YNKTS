@@ -2,8 +2,8 @@
 
 session_start();
 if (!isset($_SESSION["login"])) {
-	header("Location: masuk.php");
-	exit;
+    header("Location: masuk.php");
+    exit;
 }
 
 require 'functions.php';
@@ -51,8 +51,7 @@ require 'functions.php';
         <div class="container main-menu">
             <div class="row align-items-center justify-content-between d-flex">
                 <div id="logo">
-                    <a href="index.php"><img style="width: 100px; height: 50px;" src="img/AnoaLand3.png" alt=""
-                            title="" /></a>
+                    <a href="index.php"><img style="width: 100px; height: 50px;" src="img/AnoaLand3.png" alt="" title="" /></a>
                 </div>
                 <nav id="nav-menu-container">
                     <ul class="nav-menu">
@@ -61,14 +60,14 @@ require 'functions.php';
                         <li><a href="about.php" class="active text-warning">Tentang</a></li>
                         <li><a href="contact.php">Kontak</a></li>
                         <?php
-						if (!isset($_SESSION['login'])) {
-							echo "<li> <a href='masuk.php'>Masuk</a> </li>";
-						}
-						if (isset($_SESSION['login'])) {
-							echo "<li> <a href='profile.php'>Profile</a> </li>
+                        if (!isset($_SESSION['login'])) {
+                            echo "<li> <a href='masuk.php'>Masuk</a> </li>";
+                        }
+                        if (isset($_SESSION['login'])) {
+                            echo "<li> <a href='profile.php'>Profile</a> </li>
 								 <li> <a href='logout.php'>Keluar</a> </li>";
-						}
-						?>
+                        }
+                        ?>
                     </ul>
                 </nav><!-- #nav-menu-container -->
             </div>
@@ -85,8 +84,7 @@ require 'functions.php';
                     <h1 class="text-white">
                         Tentang
                     </h1>
-                    <p class="text-white link-nav"><a href="index.php">Beranda </a> <span
-                            class="lnr lnr-arrow-right"></span> <a href="about.php"> Tentang</a></p>
+                    <p class="text-white link-nav"><a href="index.php">Beranda </a> <span class="lnr lnr-arrow-right"></span> <a href="about.php"> Tentang</a></p>
                 </div>
             </div>
         </div>
@@ -126,10 +124,7 @@ require 'functions.php';
             <div class="row align-items-center">
                 <div class="col-lg-6 info-left">
                     <div class="map text-center">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4073091.2101302496!2d117.97581189015267!3d-4.479988140186201!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d98ecde0b6b7183%3A0x621d7c439f04a4ed!2sSulawesi%20Tenggara!5e0!3m2!1sid!2sid!4v1670379911247!5m2!1sid!2sid"
-                            width="550" height="400" style="border:0;" allowfullscreen=""
-                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4073091.2101302496!2d117.97581189015267!3d-4.479988140186201!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d98ecde0b6b7183%3A0x621d7c439f04a4ed!2sSulawesi%20Tenggara!5e0!3m2!1sid!2sid!4v1670379911247!5m2!1sid!2sid" width="550" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
                 <div class="col-lg-6 info-right">
@@ -235,7 +230,7 @@ require 'functions.php';
                         <div class="thumb">
                             <img class="img-fluid" src="img/newpict/toronipa.jpg" alt="">
                         </div>
-                        <a href="#">
+                        <a href="pantai.php">
                             <h4>Pantai</h4>
                         </a>
                     </div>
@@ -245,7 +240,7 @@ require 'functions.php';
                         <div class="thumb">
                             <img class="img-fluid" src="img/newpict/ahuawali.jpg" alt="">
                         </div>
-                        <a href="#">
+                        <a href="pegunungan.php">
                             <h4>Pegunungan</h4>
                         </a>
                     </div>
@@ -255,7 +250,7 @@ require 'functions.php';
                         <div class="thumb">
                             <img class="img-fluid" src="img/newpict/museum.jpg" alt="">
                         </div>
-                        <a href="#">
+                        <a href="budaya.php">
                             <h4>Budaya</h4>
                         </a>
                     </div>
@@ -464,7 +459,7 @@ require 'functions.php';
                 <p class="col-lg-8 col-sm-12 footer-text m-0">
                     <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                     Copyright &copy;<script>
-                    document.write(new Date().getFullYear());
+                        document.write(new Date().getFullYear());
                     </script> All rights reserved | made by <a href="https://colorlib.com" target="_blank">Anoaland</a>
                     <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                 </p>
@@ -500,4 +495,3 @@ require 'functions.php';
 </body>
 
 </html>
-

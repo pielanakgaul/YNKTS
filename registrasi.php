@@ -1,19 +1,19 @@
-<!-- <?php
+<?php
 
-		// require 'functions.php';
+require 'functions.php';
 
-		// if (isset($_POST["registrasi"])) {
-		// 	if (registrasi($_POST) > 0) {
-		// 		echo "<script>
-		// 				alert('User berhasil ditambahkan!');
-		// 				window.location.href='masuk.php';
-		// 			</script>";
-		// 	} else {
-		// 		echo mysqli_error($koneksi);
-		// 	}
-		// }
+if (isset($_POST["registrasi"])) {
+	if (registrasi($_POST) > 0) {
+		echo "<script>
+				alert('User berhasil ditambahkan!');
+				window.location.href='masuk.php';
+			</script>";
+	} else {
+		echo mysqli_error($koneksi);
+	}
+}
 
-		?> -->
+?>
 
 <!DOCTYPE html>
 <html lang="zxx" class="no-js">
@@ -99,7 +99,7 @@
 							<input type="password" class="form-control" name="kpassword" id="konfirmasi-password" placeholder="Konfirmasi passsword">
 						</div>
 						<button type="submit" class="btn btn-warning mt-3" name="registrasi">Register</button>
-						<div class="mb-20 mt-3" style="bottom: 20px; margin-bottom: 50px;">
+						<div class="mb-1 mt-3">
 							<a style="color: #0dcaf0; font-weight: bold;" href="masuk.php">Sudah punya akun? Masuk</a>
 						</div>
 					</form>
